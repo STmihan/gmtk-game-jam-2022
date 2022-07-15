@@ -32,6 +32,7 @@ namespace Gameplay
                 .Add(new PlayerSetupSystem())
                 .Add(new PlayerMovementSetupSystem())
                 .Add(new PlayerRotationSetupSystem())
+                .Add(new CameraSetupSystem())
                 .Add(new PlayerInputSystem())
                 .Add(new PlayerMovementSystem())
                 .Add(new PlayerRotationSystem())

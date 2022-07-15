@@ -481,6 +481,8 @@ GameObject:
   m_Component:
   - component: {fileID: 345771765}
   - component: {fileID: 345771766}
+  - component: {fileID: 345771768}
+  - component: {fileID: 345771767}
   m_Layer: 0
   m_Name: PlayerCam
   m_TagString: Untagged
@@ -542,6 +544,33 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 1425186679}
+--- !u!114 &345771767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345771764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61e06f9f7aea479683a323de156f3eb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    Camera: {fileID: 345771766}
+--- !u!114 &345771768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345771764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 863c7f7460b2b49abb4fa9a7ff9cb180, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  convertMode: 0
 --- !u!850595691 &375521984
 LightingSettings:
   m_ObjectHideFlags: 0
