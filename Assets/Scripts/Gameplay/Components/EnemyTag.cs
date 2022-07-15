@@ -1,7 +1,4 @@
 ﻿namespace Gameplay.Components
 {
-    public struct EnemyTag
-    {
-        
-    }
+    public struct EnemyTag { }
 }

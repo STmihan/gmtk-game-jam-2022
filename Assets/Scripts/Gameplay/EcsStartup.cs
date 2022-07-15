@@ -1,5 +1,6 @@
 using Gameplay.Components;
 using Gameplay.Configs;
+using Gameplay.Configs.Enemies;
 using Gameplay.Systems;
 using Leopotam.Ecs;
 using Sirenix.OdinInspector;
@@ -14,8 +15,9 @@ namespace Gameplay
         [SerializeField] 
         private PlayerConfig _playerConfig;
         [InlineEditor]
-        [SerializeField] 
-        private PrefabsConfig _prefabsConfig;
+        [ReadOnly]
+        [SerializeField]
+        private EnemiesConfig _enemiesConfig;
         
         private EcsWorld _world;
         private EcsSystems _systems;
@@ -34,7 +36,7 @@ namespace Gameplay
             _systems
                 .ConvertScene()
                 .OneFrame<PlayerInputAttackEvent>()
-                .Add(new PlayerSetupSystem())
+                .Add(new PlayerViewSetupSystem())
                 .Add(new PlayerMovementSetupSystem())
                 .Add(new PlayerRotationSetupSystem())
                 .Add(new CameraSetupSystem())
@@ -44,7 +46,7 @@ namespace Gameplay
                 .Add(new PlayerMovementSystem())
                 .Add(new PlayerRotationSystem())
                 .Inject(_playerConfig)
-                .Inject(_prefabsConfig)
+                .Inject(_enemiesConfig)
                 .Inject(_camera)
                 .Init();
         }

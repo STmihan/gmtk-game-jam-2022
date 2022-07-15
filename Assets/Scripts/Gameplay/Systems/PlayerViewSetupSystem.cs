@@ -5,16 +5,16 @@ using UnityEngine;
 
 namespace Gameplay.Systems
 {
-    public class PlayerSetupSystem : IEcsInitSystem
+    public class PlayerViewSetupSystem : IEcsInitSystem
     {
         private EcsWorld _world;
         private EcsFilter<PlayerSpawnComponent> _playerSpawnFilter;
-        private PrefabsConfig _prefabsConfig;
+        private PlayerConfig _playerConfig;
 
         public void Init()
         {
             var entity = _world.NewEntity();
-            var playerPrefab = _prefabsConfig.PlayerPrefab;
+            var playerPrefab = _playerConfig.PlayerPrefab;
             entity.Get<PlayerTag>();
             ref var gameObjectComponent = ref entity.Get<GameObjectComponent>();
             Vector3 spawn = new Vector3();
