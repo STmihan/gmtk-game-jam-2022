@@ -7,7 +7,7 @@ namespace Gameplay.Systems
     public class PlayerMovementSetupSystem : IEcsInitSystem
     {
         private PlayerConfig _config;
-        private EcsFilter<GameObjectComponent, PlayerTag> _filter;
+        private EcsFilter<PlayerTag, GameObjectComponent> _filter;
         public void Init()
         {
             foreach (var i in _filter)

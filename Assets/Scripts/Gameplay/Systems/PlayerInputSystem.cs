@@ -9,13 +9,14 @@ namespace Gameplay.Systems
     public class PlayerInputSystem : IEcsRunSystem, IEcsInitSystem
     {
         private EcsWorld _world;
-        private PlayerInputComponent _playerInputComponent;
+
         private Camera _camera;
+        private EcsEntity _e;
 
         public void Init()
         {
-            var e = _world.NewEntity();
-            _playerInputComponent = e.Get<PlayerInputComponent>();
+            _e = _world.NewEntity();
+            _e.Get<PlayerInputComponent>();
         }
 
         public void Run()
@@ -26,17 +27,13 @@ namespace Gameplay.Systems
             }
 
             Vector2 moveInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-            Vector3 mousePos = GetMousePosInWorld(_camera.ScreenPointToRay(Input.mousePosition));
+            Vector2 mousePos = Input.mousePosition;
 
-            _playerInputComponent.MoveInput = moveInput;
-            _playerInputComponent.MousePos = mousePos;
+            ref var playerInputComponent = ref _e.Get<PlayerInputComponent>();
+            playerInputComponent.MoveInput = moveInput;
+            playerInputComponent.MousePos = mousePos;
         }
 
-        private Vector3 GetMousePosInWorld(Ray ray)
-        {
-            var plane = new Plane(Vector3.up, Vector3.zero);
-            plane.Raycast(ray, out var d);
-            return ray.GetPoint(d);
-        }
+
     }
 }

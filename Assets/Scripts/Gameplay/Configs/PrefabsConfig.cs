@@ -6,6 +6,5 @@ namespace Gameplay.Configs
     public class PrefabsConfig : ScriptableObject
     {
         public GameObject PlayerPrefab;
-        public GameObject EnemyPrefab;
     }
 }

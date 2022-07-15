@@ -5,6 +5,6 @@ namespace Gameplay.Components
     public struct PlayerInputComponent
     {
         public Vector2 MoveInput;
-        public Vector3 MousePos;
+        public Vector2 MousePos;
     }
 }

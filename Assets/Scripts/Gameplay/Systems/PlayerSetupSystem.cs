@@ -24,6 +24,9 @@ namespace Gameplay.Systems
             }
 
             gameObjectComponent.GameObject = Object.Instantiate(playerPrefab, spawn, Quaternion.identity);
+            ref var characterControllerComponent = ref entity.Get<CharacterControllerComponent>();
+            characterControllerComponent.CharacterController =
+                gameObjectComponent.GameObject.GetComponent<CharacterController>();
         }
     }
 }

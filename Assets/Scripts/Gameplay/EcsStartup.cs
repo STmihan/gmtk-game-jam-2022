@@ -34,6 +34,8 @@ namespace Gameplay
                 .Add(new PlayerRotationSetupSystem())
                 .Add(new CameraSetupSystem())
                 .Add(new PlayerInputSystem())
+                .Add(new SetPlayerMoveDirectionSystem())
+                .Add(new SetPlayerRotationDirectionSystem())
                 .Add(new PlayerMovementSystem())
                 .Add(new PlayerRotationSystem())
                 .Inject(_playerConfig)

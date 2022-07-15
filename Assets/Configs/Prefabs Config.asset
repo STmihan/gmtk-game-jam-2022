@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da90a99f48424b2c81c45ea7714a40ec, type: 3}
   m_Name: Prefabs Config
   m_EditorClassIdentifier: 
-  PlayerPrefab: {fileID: 0}
+  PlayerPrefab: {fileID: 8350821171393784791, guid: 509db8c875e0ee64caee93df8f40a30f,
+    type: 3}
   EnemyPrefab: {fileID: 0}

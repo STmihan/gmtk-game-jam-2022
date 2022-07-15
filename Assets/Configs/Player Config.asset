@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5136caa21be4f25bb4479888fdd5148, type: 3}
   m_Name: Player Config
   m_EditorClassIdentifier: 
-  PlayerMovementSpeed: 0
-  PlayerRotationSpeed: 0
-  PlayerAttackSpeed: 0
-  PlayerProjectileSpeed: 0
+  PlayerMovementSpeed: 4
+  PlayerRotationSpeed: 2
+  PlayerAttackSpeed: 2
+  PlayerProjectileSpeed: 2
