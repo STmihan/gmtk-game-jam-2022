@@ -2,6 +2,7 @@ using Gameplay.Components;
 using Gameplay.Configs;
 using Gameplay.Systems;
 using Leopotam.Ecs;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using Voody.UniLeo;
 
@@ -9,8 +10,12 @@ namespace Gameplay
 {
     internal sealed class EcsStartup : MonoBehaviour
     {
-        [SerializeField] private PlayerConfig _playerConfig;
-        [SerializeField] private PrefabsConfig _prefabsConfig;
+        [InlineEditor]
+        [SerializeField] 
+        private PlayerConfig _playerConfig;
+        [InlineEditor]
+        [SerializeField] 
+        private PrefabsConfig _prefabsConfig;
         
         private EcsWorld _world;
         private EcsSystems _systems;

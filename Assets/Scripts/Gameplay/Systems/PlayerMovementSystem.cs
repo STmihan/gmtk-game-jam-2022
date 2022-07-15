@@ -1,4 +1,5 @@
 ﻿using Gameplay.Components;
+using Gameplay.Configs;
 using Leopotam.Ecs;
 using UnityEngine;
 
@@ -7,6 +8,7 @@ namespace Gameplay.Systems
     public class PlayerMovementSystem : IEcsRunSystem
     {
         private EcsFilter<PlayerTag, MovementComponent, CharacterControllerComponent> _filter;
+        private PlayerConfig _playerConfig;
 
         public void Run()
         {
@@ -17,7 +19,7 @@ namespace Gameplay.Systems
 
                 characterControllerComponent
                     .CharacterController
-                    .Move(movementComponent.Direction * (movementComponent.Speed * Time.deltaTime));
+                    .Move(movementComponent.Direction * (_playerConfig.PlayerMovementSpeed * Time.deltaTime));
             }
         }
     }
