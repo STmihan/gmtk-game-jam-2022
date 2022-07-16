@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Gameplay.Components
+namespace Gameplay.Components.Share
 {
     [Serializable]
     public struct CharacterControllerComponent

@@ -1,13 +1,12 @@
-﻿
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Gameplay.Configs.Enemies.Stats;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using UnityEngine;
 
-namespace Gameplay.Configs.Enemies
+namespace Gameplay.Configs.Enemies.Spawn
 {
     public struct EnemySpawnStat
     {

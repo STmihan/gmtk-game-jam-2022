@@ -1,16 +1,15 @@
-﻿using Gameplay.Components;
+﻿using Gameplay.Components.Player;
 using Leopotam.Ecs;
-using TMPro;
 using UnityEngine;
 using Input = UnityEngine.Input;
 
-namespace Gameplay.Systems
+namespace Gameplay.Systems.Player
 {
     public class PlayerInputSystem : IEcsRunSystem, IEcsInitSystem
     {
         private EcsWorld _world;
 
-        private Camera _camera;
+        private UnityEngine.Camera _camera;
         private EcsEntity _e;
 
         public void Init()

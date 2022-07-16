@@ -1,5 +1,6 @@
 ﻿using System;
 using Gameplay.Components;
+using Gameplay.Components.Player;
 using Gameplay.Configs.Enemies;
 using UnityEngine;
 using Voody.UniLeo;

@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using Gameplay.Components;
+using Gameplay.Components.Enemy;
+using Gameplay.Components.Share;
 using Gameplay.Configs.Enemies;
+using Gameplay.Configs.Enemies.Stats;
 using Leopotam.Ecs;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -14,19 +17,23 @@ namespace Gameplay.Systems.Enemy
         private EcsWorld _world;
         private EnemySpawnConfig _enemySpawnConfig;
         private EcsFilter<TimeComponent> _timeFilter;
+        private float _waveTimer;
 
         public void Init()
         {
             SpawnWave();
+            _waveTimer = 0f;
         }
 
         public void Run()
         {
+            _waveTimer += Time.deltaTime;
             foreach (var i in _timeFilter)
             {
-                if (_timeFilter.Get1(i).Time % _enemySpawnConfig.TimeBetweenWave == 0)
+                if (_waveTimer >= _enemySpawnConfig.TimeBetweenWave)
                 {
                     SpawnWave();
+                    _waveTimer = 0;
                 }
             }
         }
@@ -59,10 +66,11 @@ namespace Gameplay.Systems.Enemy
                     rules.Add(x, enemySpawnStat.EnemyType.Type);
                 }
 
-                return rules.Where(t => percent < t.Key).Select(t => t.Value).FirstOrDefault();
+                Type firstOrDefault = rules.Where(t => percent < t.Key).Select(t => t.Value).FirstOrDefault();
+                return firstOrDefault ?? typeof(RangedProjectileEnemy);
             }
 
-            return default;
+            return typeof(RangedProjectileEnemy);
         }
     }
 }

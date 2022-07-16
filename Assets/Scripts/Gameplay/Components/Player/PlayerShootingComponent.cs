@@ -1,8 +1,8 @@
 ﻿using System;
-using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
-namespace Gameplay.Components
+using UnityEngine;
+
+namespace Gameplay.Components.Player
 {
     [Serializable]
     public struct PlayerShootingComponent

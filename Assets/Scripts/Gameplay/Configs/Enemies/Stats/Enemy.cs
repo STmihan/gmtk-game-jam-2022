@@ -2,7 +2,7 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace Gameplay.Configs.Enemies
+namespace Gameplay.Configs.Enemies.Stats
 {
     [Serializable]
     public abstract class Enemy

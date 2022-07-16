@@ -1,4 +1,7 @@
 ﻿using Gameplay.Components;
+using Gameplay.Components.Enemy;
+using Gameplay.Components.Player;
+using Gameplay.Components.Share;
 using Gameplay.Configs.Enemies;
 using Leopotam.Ecs;
 using UnityEngine;

@@ -1,9 +1,10 @@
-﻿using Gameplay.Components;
+﻿using Gameplay.Components.Player;
+using Gameplay.Components.Share;
 using Gameplay.Configs;
 using Leopotam.Ecs;
 using UnityEngine;
 
-namespace Gameplay.Systems
+namespace Gameplay.Systems.Player
 {
     public class PlayerMovementSystem : IEcsRunSystem
     {

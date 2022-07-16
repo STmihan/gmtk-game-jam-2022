@@ -1,8 +1,8 @@
-﻿using Gameplay.Components;
-using Gameplay.Configs;
+﻿using Gameplay.Components.Player;
+using Gameplay.Components.Share;
 using Leopotam.Ecs;
 
-namespace Gameplay.Systems
+namespace Gameplay.Systems.Player
 {
     public class PlayerMovementSetupSystem : IEcsInitSystem
     {
