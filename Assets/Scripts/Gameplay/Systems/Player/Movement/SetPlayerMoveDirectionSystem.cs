@@ -3,7 +3,7 @@ using Gameplay.Components.Share;
 using Leopotam.Ecs;
 using UnityEngine;
 
-namespace Gameplay.Systems.Player
+namespace Gameplay.Systems.Player.Movement
 {
     public class SetPlayerMoveDirectionSystem : IEcsRunSystem
     {

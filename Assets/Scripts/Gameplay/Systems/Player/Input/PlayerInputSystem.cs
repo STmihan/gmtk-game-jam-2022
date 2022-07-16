@@ -1,9 +1,8 @@
 ﻿using Gameplay.Components.Player;
 using Leopotam.Ecs;
 using UnityEngine;
-using Input = UnityEngine.Input;
 
-namespace Gameplay.Systems.Player
+namespace Gameplay.Systems.Player.Input
 {
     public class PlayerInputSystem : IEcsRunSystem, IEcsInitSystem
     {
@@ -20,13 +19,13 @@ namespace Gameplay.Systems.Player
 
         public void Run()
         {
-            if (Input.GetButtonDown("Fire1"))
+            if (UnityEngine.Input.GetButtonDown("Fire1"))
             {
                 _world.NewEntity().Get<PlayerInputAttackEvent>();
             }
 
-            Vector2 moveInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-            Vector2 mousePos = Input.mousePosition;
+            Vector2 moveInput = new Vector2(UnityEngine.Input.GetAxis("Horizontal"), UnityEngine.Input.GetAxis("Vertical"));
+            Vector2 mousePos = UnityEngine.Input.mousePosition;
 
             ref var playerInputComponent = ref _e.Get<PlayerInputComponent>();
             playerInputComponent.MoveInput = moveInput;

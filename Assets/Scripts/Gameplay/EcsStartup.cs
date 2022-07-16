@@ -6,6 +6,8 @@ using Gameplay.Systems;
 using Gameplay.Systems.Camera;
 using Gameplay.Systems.Enemy;
 using Gameplay.Systems.Player;
+using Gameplay.Systems.Player.Input;
+using Gameplay.Systems.Player.Movement;
 using Gameplay.Systems.Share;
 using Leopotam.Ecs;
 using Sirenix.OdinInspector;

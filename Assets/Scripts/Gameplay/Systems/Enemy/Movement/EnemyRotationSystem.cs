@@ -3,7 +3,7 @@ using Gameplay.Components.Enemy;
 using Gameplay.Components.Share;
 using Leopotam.Ecs;
 
-namespace Gameplay.Systems.Enemy
+namespace Gameplay.Systems.Enemy.Movement
 {
     public class EnemyRotationSystem : IEcsRunSystem
     {

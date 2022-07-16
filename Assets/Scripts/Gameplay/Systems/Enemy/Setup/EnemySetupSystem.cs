@@ -3,7 +3,7 @@ using Gameplay.Components.Share;
 using Gameplay.Configs.Enemies;
 using Leopotam.Ecs;
 
-namespace Gameplay.Systems.Enemy
+namespace Gameplay.Systems.Enemy.Setup
 {
     public class EnemySetupSystem : IEcsRunSystem
     {

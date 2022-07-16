@@ -1,4 +1,6 @@
 ﻿using Gameplay.Systems.Enemy;
+using Gameplay.Systems.Enemy.Movement;
+using Gameplay.Systems.Enemy.Setup;
 using Leopotam.Ecs;
 
 namespace Gameplay

@@ -4,7 +4,7 @@ using Gameplay.Configs;
 using Leopotam.Ecs;
 using UnityEngine;
 
-namespace Gameplay.Systems.Player
+namespace Gameplay.Systems.Player.Movement
 {
     public class PlayerViewSetupSystem : IEcsInitSystem
     {

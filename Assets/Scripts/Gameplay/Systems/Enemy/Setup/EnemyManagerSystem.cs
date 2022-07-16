@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Gameplay.Components;
 using Gameplay.Components.Enemy;
 using Gameplay.Components.Share;
 using Gameplay.Configs.Enemies;
@@ -10,7 +9,7 @@ using Leopotam.Ecs;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace Gameplay.Systems.Enemy
+namespace Gameplay.Systems.Enemy.Setup
 {
     public class EnemyManagerSystem : IEcsRunSystem, IEcsInitSystem
     {

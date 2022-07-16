@@ -4,7 +4,7 @@ using Gameplay.Components.Share;
 using Leopotam.Ecs;
 using UnityEngine;
 
-namespace Gameplay.Systems.Enemy
+namespace Gameplay.Systems.Enemy.Movement
 {
     public class EnemySetDirectionSystem : IEcsRunSystem
     {
