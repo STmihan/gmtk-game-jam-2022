@@ -10,8 +10,9 @@ namespace Gameplay.Configs.Attacks
         [PreviewField]
         public VFXView HitVFX;
         [PreviewField]
-        public VFXView BottomVfx;
-        [PreviewField]
         public VFXView TopVFX;
+        public float Damage;
+        public float TimeBeforeHit;
+        public float Radius;
     }
 }

@@ -28,17 +28,18 @@ namespace Gameplay.Systems.Player.Attack
                 var config = _config.Attacks[weapon];
                 var firePoint = _playerFilter.Get2(i).View.FirePoint;
                 var direction = firePoint.forward;
-                var view = Object.Instantiate(config.ProjectilePrefab, firePoint.position, Quaternion.identity);
+                var view = Object.Instantiate(config.PlayerProjectilePrefab, firePoint.position, Quaternion.identity);
                 view.Type = config.Type;
                 view.LayerMask = LayerMask.GetMask("Enemies");
                 view.EcsWorld = _world;
                 view.Speed = _playerConfig.PlayerProjectileSpeed;
                 view.Direction = direction;
+                if (config.Type == typeof(PlayerBrownAttack)) view.DestroyOnHit = false;
                 ref var attackEvent = ref entity.Get<AttackEvent>();
                 attackEvent.Direction = direction;
                 attackEvent.Type = config.Type;
                 attackEvent.LayerMask = view.LayerMask;
-                attackEvent.ProjectileView = view;
+                attackEvent.PlayerProjectileView = view;
 
                 var playerEntity = _playerFilter.GetEntity(i);
                 playerEntity.Del<CanAttackTag>();

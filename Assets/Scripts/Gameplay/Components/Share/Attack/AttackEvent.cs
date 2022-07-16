@@ -9,6 +9,6 @@ namespace Gameplay.Components.Share.Attack
         public Type Type;
         public Vector3 Direction;
         public LayerMask LayerMask;
-        public ProjectileView ProjectileView;
+        public PlayerProjectileView PlayerProjectileView;
     }
 }

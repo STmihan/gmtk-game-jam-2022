@@ -38,7 +38,8 @@ namespace Gameplay
                          .Add(new PlayerAttackSystem())
                          .Add(new PlayerChangeActiveWeaponSystem())
                          .Add(new PlayerWhiteAttackSystem())
-                         .Add(new PlayerBlueAttackSystem());
+                         .Add(new PlayerBlueAttackSystem())
+                         .Add(new PlayerBrownAttackSystem());
         }
     }
 }

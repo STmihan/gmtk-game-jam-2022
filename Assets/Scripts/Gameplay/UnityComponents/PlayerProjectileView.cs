@@ -2,10 +2,11 @@
 using Gameplay.Components.Share.Attack;
 using Leopotam.Ecs;
 using UnityEngine;
+using Utils;
 
 namespace Gameplay.UnityComponents
 {
-    public class ProjectileView : MonoBehaviour
+    public class PlayerProjectileView : MonoBehaviour
     {
         [SerializeField] private float _destroyTime = 5;
         public EcsWorld EcsWorld { get; set; }
@@ -13,6 +14,7 @@ namespace Gameplay.UnityComponents
         public Type Type { get; set; }
         public float Speed { get; set; }
         public Vector3 Direction { get; set; }
+        public bool DestroyOnHit = true;
         private Rigidbody _rigidbody;
         
         private void Start()
@@ -30,14 +32,14 @@ namespace Gameplay.UnityComponents
         {
             if (other.TryGetComponent<CharacterView>(out var view))
             {
-                if (LayerMask.value == other.gameObject.layer)
+                if (LayerMask.Equal(other.gameObject.layer))
                 {
                     ref var hitEvent = ref EcsWorld.NewEntity().Get<HitEvent>();
                     hitEvent.Type = Type;
                     hitEvent.Position = other.ClosestPoint(transform.position);
+                    if(DestroyOnHit) Destroy(gameObject);
                 }
             }
-            else if(LayerMask.value == LayerMask.GetMask("Player")) {}
             else
             {
                 ref var hitEvent = ref EcsWorld.NewEntity().Get<HitEvent>();

@@ -42,7 +42,6 @@ GameObject:
   - component: {fileID: 8528729103051122456}
   - component: {fileID: 8528729103051122459}
   - component: {fileID: 8528729103051122458}
-  - component: {fileID: 8528729103051122457}
   m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
@@ -116,19 +115,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &8528729103051122457
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8528729103051122463}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8528729103120586725
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,7 +126,6 @@ GameObject:
   - component: {fileID: 8528729103120586726}
   - component: {fileID: 8528729103120586721}
   - component: {fileID: 8528729103120586720}
-  - component: {fileID: 8528729103120586727}
   m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
@@ -213,19 +198,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8528729103120586727
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8528729103120586725}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8528729104509069085
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,6 +209,7 @@ GameObject:
   - component: {fileID: 8528729104509069086}
   - component: {fileID: 4591119926379474274}
   - component: {fileID: 8797160422912487170}
+  - component: {fileID: 2952016779672363806}
   m_Layer: 6
   m_Name: MeleeEnemy
   m_TagString: Untagged
@@ -273,7 +246,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 6
-  m_Radius: 1.5
+  m_Radius: 1
   m_SlopeLimit: 180
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -292,3 +265,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <FirePoint>k__BackingField: {fileID: 3461096283786380472}
+--- !u!65 &2952016779672363806
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8528729104509069085}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 2, z: 0}

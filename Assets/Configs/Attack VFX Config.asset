@@ -21,6 +21,10 @@ MonoBehaviour:
     - {fileID: 1598510078412016403, guid: 9169d5bbb6196cd45a4fb5b252c4ea97, type: 3}
     - {fileID: -4493841171148374118, guid: a7bbe8011228b0944a791f42c36bb084, type: 3}
     - {fileID: 4070849223248650287, guid: 8de90bf0fc1ea5a428d68d55a2f36642, type: 3}
+    - {fileID: -8056331375218627505, guid: f5547c89a031c2948a83b27ee0ae9ff3, type: 3}
+    - {fileID: 3593515385178816457, guid: 7cb56b1e84bf342429247739f2973b5e, type: 3}
+    - {fileID: -7294285029619834316, guid: 7dc994e885826b6429e582df7bc0d4cf, type: 3}
+    - {fileID: -4887663525309678185, guid: c11bd6760b2c54240916081c4f2b9264, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -32,11 +36,11 @@ MonoBehaviour:
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
-      Data: 2
+      Data: 3
     - Name: 
       Entry: 7
       Data: 1|Gameplay.Configs.Attacks.PlayerBlueAttack, Assembly-CSharp
-    - Name: ProjectilePrefab
+    - Name: PlayerProjectilePrefab
       Entry: 10
       Data: 0
     - Name: Trail
@@ -57,7 +61,7 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 2|Gameplay.Configs.Attacks.PlayerWhiteAttack, Assembly-CSharp
-    - Name: ProjectilePrefab
+    - Name: PlayerProjectilePrefab
       Entry: 10
       Data: 3
     - Name: HitVFX
@@ -66,6 +70,33 @@ MonoBehaviour:
     - Name: Damage
       Entry: 4
       Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 3|Gameplay.Configs.Attacks.PlayerBrownAttack, Assembly-CSharp
+    - Name: PlayerProjectilePrefab
+      Entry: 10
+      Data: 5
+    - Name: HitVFX
+      Entry: 10
+      Data: 6
+    - Name: BottomVfx
+      Entry: 10
+      Data: 7
+    - Name: TopVFX
+      Entry: 10
+      Data: 8
+    - Name: Damage
+      Entry: 4
+      Data: 5
+    - Name: TimeBeforeHit
+      Entry: 4
+      Data: 0.6
+    - Name: Radius
+      Entry: 4
+      Data: 3
     - Name: 
       Entry: 8
       Data: 
