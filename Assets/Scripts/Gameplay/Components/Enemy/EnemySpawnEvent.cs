@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Gameplay.Components
+namespace Gameplay.Components.Enemy
 {
     public struct EnemySpawnEvent
     {

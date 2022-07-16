@@ -1,7 +1,9 @@
-﻿using Gameplay.Components;
+﻿using Gameplay.Components.Camera;
+using Gameplay.Components.Player;
+using Gameplay.Components.Share;
 using Leopotam.Ecs;
 
-namespace Gameplay.Systems
+namespace Gameplay.Systems.Camera
 {
     public class CameraSetupSystem : IEcsInitSystem
     {

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Gameplay.Components
+namespace Gameplay.Components.Share
 {
     public struct GameObjectComponent
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using Cinemachine;
 
-namespace Gameplay.Components
+namespace Gameplay.Components.Camera
 {
     [Serializable]
     public struct CMComponent

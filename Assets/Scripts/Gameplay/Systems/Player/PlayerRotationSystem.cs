@@ -1,9 +1,10 @@
 ﻿using DG.Tweening;
-using Gameplay.Components;
+using Gameplay.Components.Player;
+using Gameplay.Components.Share;
 using Gameplay.Configs;
 using Leopotam.Ecs;
 
-namespace Gameplay.Systems
+namespace Gameplay.Systems.Player
 {
     public class PlayerRotationSystem : IEcsRunSystem
     {

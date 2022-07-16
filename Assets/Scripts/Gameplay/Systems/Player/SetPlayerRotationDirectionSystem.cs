@@ -1,14 +1,15 @@
-﻿using Gameplay.Components;
+﻿using Gameplay.Components.Player;
+using Gameplay.Components.Share;
 using Leopotam.Ecs;
 using UnityEngine;
 
-namespace Gameplay.Systems
+namespace Gameplay.Systems.Player
 {
     public class SetPlayerRotationDirectionSystem : IEcsRunSystem
     {
         private EcsFilter<PlayerTag, RotationComponent> _playerFilter;
         private EcsFilter<PlayerInputComponent> _inputFilter;
-        private Camera _camera;
+        private UnityEngine.Camera _camera;
         
         public void Run()
         {
