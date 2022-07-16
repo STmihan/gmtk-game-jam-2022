@@ -14,6 +14,8 @@ namespace Gameplay.Systems.Player.Setup
             {
                 var entity = _filter.GetEntity(i);
                 entity.Get<CanAttackTag>();
+                ref var playerActiveWeaponComponent = ref entity.Get<PlayerActiveWeaponComponent>();
+                playerActiveWeaponComponent.Id = 0;
             }
         }
     }

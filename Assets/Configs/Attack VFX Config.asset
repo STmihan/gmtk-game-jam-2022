@@ -15,154 +15,37 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: -524870652015700731, guid: 83271ee01a0f7784a886cce1b46f7add, type: 3}
+    - {fileID: 5797350662664681374, guid: 290f1d640cecb97489f6009be540e723, type: 3}
+    - {fileID: 1598510078412016403, guid: 9169d5bbb6196cd45a4fb5b252c4ea97, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
-    - Name: AttackVFXs
+    - Name: Attacks
       Entry: 7
       Data: 0|System.Collections.Generic.List`1[[Gameplay.Configs.Attacks.Attack,
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
-      Data: 10
+      Data: 1
     - Name: 
       Entry: 7
-      Data: 1|Gameplay.Configs.Attacks.EnemyBlueAttack, Assembly-CSharp
+      Data: 1|Gameplay.Configs.Attacks.PlayerBlueAttack, Assembly-CSharp
     - Name: ProjectilePrefab
-      Entry: 6
-      Data: 
-    - Name: TrailView
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 2|Gameplay.Configs.Attacks.EnemyBrownAttack, Assembly-CSharp
-    - Name: ProjectilePrefab
-      Entry: 6
-      Data: 
-    - Name: BottomVfx
-      Entry: 6
-      Data: 
-    - Name: TopVFX
-      Entry: 6
-      Data: 
-    - Name: HitVFX
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 3|Gameplay.Configs.Attacks.EnemyDarkAttack, Assembly-CSharp
-    - Name: ProjectilePrefab
-      Entry: 6
-      Data: 
-    - Name: ChargeVfx
-      Entry: 6
-      Data: 
-    - Name: HitVFX
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 4|Gameplay.Configs.Attacks.EnemyFireAttack, Assembly-CSharp
-    - Name: ProjectilePrefab
-      Entry: 6
-      Data: 
-    - Name: ExplosionVFX
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 5|Gameplay.Configs.Attacks.EnemyFireChargeAttack, Assembly-CSharp
-    - Name: ProjectilePrefab
-      Entry: 6
-      Data: 
-    - Name: TrailVFX
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 6|Gameplay.Configs.Attacks.PlayerBlueAttack, Assembly-CSharp
-    - Name: ProjectilePrefab
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 0
     - Name: Trail
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 7|Gameplay.Configs.Attacks.PlayerBrownAttack, Assembly-CSharp
-    - Name: ProjectilePrefab
-      Entry: 6
-      Data: 
-    - Name: HitVFX
-      Entry: 6
-      Data: 
-    - Name: BottomVfx
-      Entry: 6
-      Data: 
-    - Name: TopVFX
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 8|Gameplay.Configs.Attacks.PlayerDarkAttack, Assembly-CSharp
-    - Name: ProjectilePrefab
-      Entry: 6
-      Data: 
-    - Name: ChargeVFX
-      Entry: 6
-      Data: 
-    - Name: ExplosionVFX
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 9|Gameplay.Configs.Attacks.PlayerFireAttack, Assembly-CSharp
-    - Name: ProjectilePrefab
-      Entry: 6
-      Data: 
-    - Name: ExplosionVFX
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 10|Gameplay.Configs.Attacks.PlayerWhiteAttack, Assembly-CSharp
-    - Name: ProjectilePrefab
-      Entry: 6
-      Data: 
-    - Name: HitVFX
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 1
+    - Name: Explosion
+      Entry: 10
+      Data: 2
+    - Name: ChainCount
+      Entry: 3
+      Data: 4
     - Name: 
       Entry: 8
       Data: 

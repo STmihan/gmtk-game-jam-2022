@@ -5,7 +5,7 @@ using Sirenix.OdinInspector;
 namespace Gameplay.Configs.Attacks
 {
     [Serializable]
-    public class EnemyFireAttack : Attack
+    public class EnemyFireSuicideAttack : Attack
     {
         [PreviewField]
         public VFXView ExplosionVFX;

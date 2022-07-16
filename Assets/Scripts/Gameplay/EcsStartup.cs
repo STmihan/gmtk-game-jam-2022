@@ -28,7 +28,7 @@ namespace Gameplay
         [InlineEditor] [ReadOnly] [SerializeField]
         private EnemyStatsConfig _enemyStatsConfig;
         [InlineEditor] [ReadOnly] [SerializeField]
-        private AttackVFXConfig _attackVFXConfig;
+        private AttackConfig _attackConfig;
         
         private EcsWorld _world;
         private EcsSystems _systems;
@@ -47,6 +47,8 @@ namespace Gameplay
             _systems
                 .ConvertScene()
                 .OneFrame<PlayerInputAttackEvent>()
+                .OneFrame<PlayerInputChangeWeaponEvent>()
+                .OneFrame<PlayerInputSecondaryAttackEvent>()
                 .Add(new TimeSystem())
                 .Add(new ReloadAttackTimerSystem())
                 .AddPlayerSystems()
@@ -56,7 +58,7 @@ namespace Gameplay
                 .Inject(_enemyStatsConfig)
                 .Inject(_enemySpawnConfig)
                 .Inject(_camera)
-                .Inject(_attackVFXConfig)
+                .Inject(_attackConfig)
                 .Init();
         }
 

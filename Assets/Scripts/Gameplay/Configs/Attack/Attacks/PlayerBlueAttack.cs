@@ -9,5 +9,7 @@ namespace Gameplay.Configs.Attacks
     {
         [PreviewField]
         public VFXView Trail;
+        public VFXView Explosion;
+        public int ChainCount = 4;
     }
 }

@@ -2,6 +2,7 @@
 using Gameplay.Systems.Enemy.Movement;
 using Gameplay.Systems.Enemy.Setup;
 using Gameplay.Systems.Player.Attack;
+using Gameplay.Systems.Player.Attack.Types;
 using Gameplay.Systems.Player.Input;
 using Gameplay.Systems.Player.Movement;
 using Gameplay.Systems.Player.Setup;
@@ -33,7 +34,10 @@ namespace Gameplay
                          .Add(new PlayerSetRotationDirectionSystem())
                          .Add(new PlayerMovementSystem())
                          .Add(new PlayerRotationSystem())
-                         .Add(new PlayerAttackSystem());
+                         .Add(new PlayerAttackSystem())
+                         .Add(new PlayerChangeActiveWeaponSystem())
+                         .Add(new PlayerWhiteAttackSystem())
+                         .Add(new PlayerBlueAttackSystem());
         }
     }
 }

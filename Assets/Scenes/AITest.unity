@@ -402,7 +402,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7784946, y: 1}
+    m_SensorSize: {x: 1.7763441, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2566,4 +2566,4 @@ MonoBehaviour:
   _playerConfig: {fileID: 11400000, guid: ec309a13046fe0a47a0f6939259688ac, type: 2}
   _enemySpawnConfig: {fileID: 11400000, guid: 884cdb0c4250154468728df945a3358f, type: 2}
   _enemyStatsConfig: {fileID: 11400000, guid: d5c38119d0c489d4a98ba55b30fd05fe, type: 2}
-  _attackVFXConfig: {fileID: 0}
+  _attackConfig: {fileID: 11400000, guid: cc25dec3bed885640a6053f45e7367f4, type: 2}

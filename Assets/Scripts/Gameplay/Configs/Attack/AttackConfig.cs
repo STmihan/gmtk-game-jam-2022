@@ -5,8 +5,8 @@ using UnityEngine;
 namespace Gameplay.Configs.Attacks
 {
     [CreateAssetMenu]
-    public class AttackVFXConfig : SerializedScriptableObject
+    public class AttackConfig : SerializedScriptableObject
     {
-        public List<Attack> AttackVFXs = new();
+        public List<Attack> Attacks = new();
     }
 }

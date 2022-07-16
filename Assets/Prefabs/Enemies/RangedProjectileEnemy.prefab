@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1751832828884555782}
   - component: {fileID: 1751832828884555783}
   - component: {fileID: 1751832828884555780}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1751832828884555778}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 1751832828932532476}
   - component: {fileID: 1751832828932532477}
   - component: {fileID: 1751832828932532474}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -190,7 +190,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1751832828932532472}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 1751832830245181443}
   - component: {fileID: 1729284208572835758}
   - component: {fileID: 3731996026207890278}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RangedProjectileEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -270,7 +270,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8133737035095159674}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}

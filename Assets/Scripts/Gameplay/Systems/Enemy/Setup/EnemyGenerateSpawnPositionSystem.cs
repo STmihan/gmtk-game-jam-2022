@@ -24,9 +24,9 @@ namespace Gameplay.Systems.Enemy.Setup
                     _enemySpawnConfig.EnemySpawnRadius + _enemySpawnConfig.EnemySpawnDelta,
                     _enemySpawnConfig.EnemySpawnRadius);
                 enemySpawnEvent.Position = new Vector3(
-                    point.x,
+                    playerPos.x + point.x,
                     playerPos.y,
-                    point.y
+                    playerPos.z + point.y
                 );
             }
         }
