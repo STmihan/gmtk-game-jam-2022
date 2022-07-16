@@ -7,7 +7,7 @@ namespace Gameplay.Systems.Player.Movement
 {
     internal class PlayerShootingSystem : IEcsRunSystem
     {
-        private readonly EcsFilter<PlayerTag, PlayerShootingComponent, PlayerInputAttackEvent, CharacterControllerComponent> _filter = null;
+        private readonly EcsFilter<PlayerTag, PlayerShootingComponent, PlayerInputAttackEvent, CharacterViewComponent> _filter = null;
         public void Run()
         {
             foreach (var i in _filter)
@@ -19,8 +19,8 @@ namespace Gameplay.Systems.Player.Movement
                 ref var hits = ref shootingComponent.hits;
                 ref var currentHitObjects = ref shootingComponent.currentHitObjects;
 
-                ref var controller = ref _filter.GetEntity(i).Get<CharacterControllerComponent>();
-                Vector3 origin =  controller.CharacterController.transform.position;
+                ref var controller = ref _filter.GetEntity(i).Get<CharacterViewComponent>();
+                Vector3 origin =  controller.View.transform.position;
 
                 RaycastHit[] raycastHits = new RaycastHit[10];
                 hits = Physics.SphereCastNonAlloc(origin, radius, Vector3.zero, raycastHits, maskDetecting);

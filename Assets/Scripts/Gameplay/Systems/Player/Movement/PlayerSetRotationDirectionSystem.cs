@@ -1,15 +1,17 @@
 ﻿using Gameplay.Components.Player;
 using Gameplay.Components.Share;
+using Gameplay.Configs;
 using Leopotam.Ecs;
 using UnityEngine;
 
 namespace Gameplay.Systems.Player.Movement
 {
-    public class SetPlayerRotationDirectionSystem : IEcsRunSystem
+    public class PlayerSetRotationDirectionSystem : IEcsRunSystem
     {
         private EcsFilter<PlayerTag, RotationComponent> _playerFilter;
         private EcsFilter<PlayerInputComponent> _inputFilter;
         private UnityEngine.Camera _camera;
+        private PlayerConfig _config;
         
         public void Run()
         {
@@ -20,6 +22,7 @@ namespace Gameplay.Systems.Player.Movement
                 {
                     ref var rotationComponent = ref _playerFilter.Get2(j);
                     rotationComponent.InDirection = GetMousePosInWorld(_camera.ScreenPointToRay(mousePos));
+                    rotationComponent.Duration = _config.PlayerRotationDuration;
                 }
             }
         }

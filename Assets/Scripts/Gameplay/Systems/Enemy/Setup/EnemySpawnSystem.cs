@@ -2,6 +2,7 @@
 using Gameplay.Components.Enemy;
 using Gameplay.Components.Share;
 using Gameplay.Configs.Enemies;
+using Gameplay.UnityComponents;
 using Leopotam.Ecs;
 using UnityEngine;
 
@@ -22,17 +23,19 @@ namespace Gameplay.Systems.Enemy.Setup
                 ref var enemyTag = ref entity.Get<EnemyTag>();
                 entity.Get<MovementComponent>();
                 entity.Get<RotationComponent>();
-                ref var gameObjectComponent = ref entity.Get<GameObjectComponent>();
+                
+                ref var viewComponent = ref entity.Get<CharacterViewComponent>();
+                
                 var enemySpawnEvent = _filter.Get1(i);
                 var enemy = _enemyStatsConfig.Enemies.FirstOrDefault(enemy => enemy.Type == enemySpawnEvent.Type);
-                gameObjectComponent.GameObject = Object.Instantiate(
+                
+                viewComponent.View = Object.Instantiate(
                     enemy.Prefab,
                     enemySpawnEvent.Position,
                     Quaternion.identity);
+                
                 enemyTag.Type = enemySpawnEvent.Type;
-                ref var characterControllerComponent = ref entity.Get<CharacterControllerComponent>();
-                characterControllerComponent.CharacterController =
-                    gameObjectComponent.GameObject.GetComponent<CharacterController>();
+                
                 _filter.GetEntity(i).Del<EnemySpawnEvent>();
             }
         }

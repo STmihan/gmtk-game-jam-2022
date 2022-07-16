@@ -1,4 +1,5 @@
-﻿using Sirenix.OdinInspector;
+﻿using Gameplay.UnityComponents;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Gameplay.Configs
@@ -7,7 +8,7 @@ namespace Gameplay.Configs
     public class PlayerConfig : ScriptableObject
     {
         [PreviewField]
-        public GameObject PlayerPrefab;
+        public CharacterView PlayerPrefab;
         [Header("Player")]
         public float PlayerMovementSpeed;
         public float PlayerRotationDuration;

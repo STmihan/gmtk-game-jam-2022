@@ -8,6 +8,7 @@ using Gameplay.Systems.Enemy;
 using Gameplay.Systems.Player;
 using Gameplay.Systems.Player.Input;
 using Gameplay.Systems.Player.Movement;
+using Gameplay.Systems.Player.Setup;
 using Gameplay.Systems.Share;
 using Leopotam.Ecs;
 using Sirenix.OdinInspector;
@@ -45,13 +46,14 @@ namespace Gameplay
                 .ConvertScene()
                 .OneFrame<PlayerInputAttackEvent>()
                 .Add(new TimeSystem())
+                .Add(new PlayerInputSystem())
                 .Add(new PlayerViewSetupSystem())
                 .Add(new PlayerMovementSetupSystem())
                 .Add(new PlayerRotationSetupSystem())
+                .Add(new PlayerAttackSetupSystem())
                 .Add(new CameraSetupSystem())
-                .Add(new PlayerInputSystem())
-                .Add(new SetPlayerMoveDirectionSystem())
-                .Add(new SetPlayerRotationDirectionSystem())
+                .Add(new PlayerSetMoveDirectionSystem())
+                .Add(new PlayerSetRotationDirectionSystem())
                 .Add(new PlayerMovementSystem())
                 .Add(new PlayerRotationSystem())
                 .AddEnemySystems()

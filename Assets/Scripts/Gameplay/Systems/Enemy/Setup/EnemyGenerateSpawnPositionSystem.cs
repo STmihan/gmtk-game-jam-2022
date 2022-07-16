@@ -11,14 +11,14 @@ namespace Gameplay.Systems.Enemy.Setup
     {
         private EnemySpawnConfig _enemySpawnConfig;
         private EcsFilter<EnemySpawnEvent> _spawnFilter;
-        private EcsFilter<PlayerTag, GameObjectComponent> _playerFilter;
+        private EcsFilter<PlayerTag, CharacterViewComponent> _playerFilter;
 
         public void Run()
         {
             foreach (var i in _spawnFilter)
             foreach (var j in _playerFilter)
             {
-                var playerPos = _playerFilter.Get2(j).GameObject.transform.position;
+                var playerPos = _playerFilter.Get2(j).View.transform.position;
                 ref var enemySpawnEvent = ref _spawnFilter.Get1(i);
                 var point = GeneratePointInTheRing(
                     _enemySpawnConfig.EnemySpawnRadius + _enemySpawnConfig.EnemySpawnDelta,

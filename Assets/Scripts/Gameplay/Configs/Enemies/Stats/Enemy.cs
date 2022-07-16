@@ -1,4 +1,5 @@
 ﻿using System;
+using Gameplay.UnityComponents;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -8,7 +9,7 @@ namespace Gameplay.Configs.Enemies.Stats
     public abstract class Enemy
     {
         [PreviewField(ObjectFieldAlignment.Center)]
-        public GameObject Prefab;
+        public CharacterView Prefab;
         public int MaxHp;
         public float MoveSpeed;
         public float RotationDuration;

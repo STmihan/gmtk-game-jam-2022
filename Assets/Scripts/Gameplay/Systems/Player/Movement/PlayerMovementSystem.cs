@@ -8,8 +8,7 @@ namespace Gameplay.Systems.Player.Movement
 {
     public class PlayerMovementSystem : IEcsRunSystem
     {
-        private EcsFilter<PlayerTag, MovementComponent, CharacterControllerComponent> _filter;
-        private PlayerConfig _playerConfig;
+        private EcsFilter<PlayerTag, MovementComponent, CharacterViewComponent> _filter;
 
         public void Run()
         {
@@ -19,8 +18,9 @@ namespace Gameplay.Systems.Player.Movement
                 ref var characterControllerComponent = ref _filter.Get3(i);
 
                 characterControllerComponent
+                    .View
                     .CharacterController
-                    .Move(movementComponent.Direction * (_playerConfig.PlayerMovementSpeed * Time.deltaTime));
+                    .Move(movementComponent.Direction * (movementComponent.Speed * Time.deltaTime));
             }
         }
     }
