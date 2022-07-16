@@ -53,6 +53,7 @@ namespace Gameplay
                 .Add(new EnemyGenerateSpawnPositionSystem())
                 .Add(new EnemySpawnSystem())
                 .Add(new EnemySetupSystem())
+                .Add(new EnemyMovementSystem())
                 .Inject(_playerConfig)
                 .Inject(_enemyStatsConfig)
                 .Inject(_enemySpawnConfig)
