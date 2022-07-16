@@ -1,11 +1,10 @@
 ﻿using Gameplay.Components.Player;
 using Gameplay.Components.Share;
 using Gameplay.Configs;
-using Gameplay.UnityComponents;
 using Leopotam.Ecs;
 using UnityEngine;
 
-namespace Gameplay.Systems.Player.Movement
+namespace Gameplay.Systems.Player.Setup
 {
     public class PlayerViewSetupSystem : IEcsInitSystem
     {

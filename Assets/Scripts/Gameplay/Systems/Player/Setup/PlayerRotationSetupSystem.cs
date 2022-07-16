@@ -3,7 +3,7 @@ using Gameplay.Components.Share;
 using Gameplay.Configs;
 using Leopotam.Ecs;
 
-namespace Gameplay.Systems.Player.Movement
+namespace Gameplay.Systems.Player.Setup
 {
     public class PlayerRotationSetupSystem : IEcsInitSystem
     {

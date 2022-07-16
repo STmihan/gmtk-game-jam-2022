@@ -1,6 +1,6 @@
 ﻿namespace Gameplay.Components.Share.Attack
 {
-    public struct CanShootTag
+    public struct CanAttackTag
     {
         
     }

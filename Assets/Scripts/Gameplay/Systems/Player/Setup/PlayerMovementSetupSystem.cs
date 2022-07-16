@@ -2,7 +2,7 @@
 using Gameplay.Components.Share;
 using Leopotam.Ecs;
 
-namespace Gameplay.Systems.Player.Movement
+namespace Gameplay.Systems.Player.Setup
 {
     public class PlayerMovementSetupSystem : IEcsInitSystem
     {

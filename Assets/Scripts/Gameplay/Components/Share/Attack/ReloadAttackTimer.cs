@@ -2,6 +2,6 @@
 {
     public struct ReloadAttackTimer
     {
-        
+        public float Time;
     }
 }
