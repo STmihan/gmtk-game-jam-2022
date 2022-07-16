@@ -13,8 +13,7 @@ namespace Gameplay.Systems
             foreach (var i in _filter)
             {
                 var entity = _filter.GetEntity(i);
-                ref var rotationComponent = ref entity.Get<RotationComponent>();
-                rotationComponent.Speed = _config.PlayerMovementSpeed;
+                entity.Get<RotationComponent>();
             }
         }
     }
