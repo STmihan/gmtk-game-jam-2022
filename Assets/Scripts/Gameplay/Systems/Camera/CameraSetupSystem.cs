@@ -8,7 +8,7 @@ namespace Gameplay.Systems.Camera
     public class CameraSetupSystem : IEcsInitSystem
     {
         private EcsFilter<CMComponent> _cameraFilter;
-        private EcsFilter<PlayerTag, GameObjectComponent> _playerFilter;
+        private EcsFilter<PlayerTag, CharacterViewComponent> _playerFilter;
         public void Init()
         {
             foreach (var i in _cameraFilter)
@@ -17,8 +17,8 @@ namespace Gameplay.Systems.Camera
                 foreach (var j in _playerFilter)
                 {
                     ref var gameObjectComponent = ref _playerFilter.Get2(j);
-                    cmComponent.Camera.Follow = gameObjectComponent.GameObject.transform;
-                    cmComponent.Camera.LookAt = gameObjectComponent.GameObject.transform;
+                    cmComponent.Camera.Follow = gameObjectComponent.View.transform;
+                    cmComponent.Camera.LookAt = gameObjectComponent.View.transform;
                 }
             }
         }
