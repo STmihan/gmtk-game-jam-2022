@@ -38,7 +38,7 @@ MonoBehaviour:
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
-      Data: 4
+      Data: 5
     - Name: 
       Entry: 7
       Data: 1|Gameplay.Configs.Attacks.PlayerBlueAttack, Assembly-CSharp
@@ -110,7 +110,19 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 4|Gameplay.Configs.Attacks.PlayerWhiteAttack, Assembly-CSharp
+      Data: 4|Gameplay.Configs.Attacks.PlayerFireAttack, Assembly-CSharp
+    - Name: PlayerProjectilePrefab
+      Entry: 6
+      Data: 
+    - Name: ExplosionVFX
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 5|Gameplay.Configs.Attacks.PlayerWhiteAttack, Assembly-CSharp
     - Name: PlayerProjectilePrefab
       Entry: 10
       Data: 9

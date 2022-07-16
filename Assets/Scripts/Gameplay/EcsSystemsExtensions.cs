@@ -40,7 +40,8 @@ namespace Gameplay
                          .Add(new PlayerWhiteAttackSystem())
                          .Add(new PlayerBlueAttackSystem())
                          .Add(new PlayerBrownAttackSystem())
-                         .Add(new PlayerDarkAttackSystem());
+                         .Add(new PlayerDarkAttackSystem())
+                         .Add(new PlayerFireAttackSystem());
         }
     }
 }

@@ -11,6 +11,7 @@ namespace Gameplay.Systems.Player.Attack
     public class PlayerAttackSystem : IEcsRunSystem
     {
         private EcsFilter<PlayerInputAttackEvent> _attackEventFilter;
+        private EcsFilter<PlayerInputSecondaryAttackEvent> _secondaryAttackEventFilter;
         private EcsFilter<PlayerActiveWeaponComponent> _activeWeapon;
         private EcsFilter<PlayerTag, CharacterViewComponent, CanAttackTag> _playerFilter;
         private EcsWorld _world;
@@ -19,11 +20,18 @@ namespace Gameplay.Systems.Player.Attack
 
         public void Run()
         {
-            foreach (var e in _attackEventFilter)
-            foreach (var i in _playerFilter)
-            foreach (var j in _activeWeapon)
+            foreach (var i in _activeWeapon)
             {
-                var weapon = _activeWeapon.Get1(j).Id;
+                foreach (var e in _attackEventFilter) Shoot(_activeWeapon.Get1(i).Id);
+            }
+
+            foreach (var s in _secondaryAttackEventFilter) Shoot(4);
+        }
+
+        private void Shoot(int weapon)
+        {
+            foreach (var i in _playerFilter)
+            {
                 var entity = _world.NewEntity();
                 var config = _config.Attacks[weapon];
                 var firePoint = _playerFilter.Get2(i).View.FirePoint;
