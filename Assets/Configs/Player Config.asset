@@ -16,5 +16,5 @@ MonoBehaviour:
     type: 3}
   PlayerMovementSpeed: 8
   PlayerRotationDuration: 0.2
-  PlayerAttackSpeed: 2
+  PlayerAttackDelay: 1
   PlayerProjectileSpeed: 200

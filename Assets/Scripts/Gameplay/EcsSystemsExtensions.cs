@@ -20,7 +20,8 @@ namespace Gameplay
                          .Add(new EnemySetupSystem())
                          .Add(new EnemySetDirectionSystem())
                          .Add(new EnemyMovementSystem())
-                         .Add(new EnemyRotationSystem());
+                         .Add(new EnemyRotationSystem())
+                         .Add(new EnemyDieSystem());
         }
         
         public static EcsSystems AddPlayerSystems(this EcsSystems system)

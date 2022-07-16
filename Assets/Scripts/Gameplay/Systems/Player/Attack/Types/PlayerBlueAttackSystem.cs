@@ -37,12 +37,25 @@ namespace Gameplay.Systems.Player.Attack.Types
                     foreach (var chain in chains)
                     {
                         sequence.Append(view.transform.DOMove(chain.position, 0.1f).OnComplete(() =>
-                            Object.Instantiate(explosion, chain.position, Quaternion.identity)));
+                        {
+                            Object.Instantiate(explosion, chain.position, Quaternion.identity);
+                            var enemyEntity = GetEnemyByTransform(chain);
+                            ref var hpComponent = ref enemyEntity.Get<HpComponent>();
+                            hpComponent.Hp -= config.Damage;
+                        }));
                     }
                 }
 
                 _firestHitFilter.GetEntity(i).Del<HitEvent>();
             }
+        }
+        
+        private EcsEntity GetEnemyByTransform(Transform transform)
+        {
+            foreach (var i in _enemiesFilter)
+                if (_enemiesFilter.Get2(i).View.transform == transform)
+                    return _enemiesFilter.GetEntity(i);
+            return default;
         }
 
         private Transform[] GetChain(Transform firstTarget, int chainCount)

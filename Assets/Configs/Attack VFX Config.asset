@@ -19,6 +19,8 @@ MonoBehaviour:
     - {fileID: -524870652015700731, guid: 83271ee01a0f7784a886cce1b46f7add, type: 3}
     - {fileID: 5797350662664681374, guid: 290f1d640cecb97489f6009be540e723, type: 3}
     - {fileID: 1598510078412016403, guid: 9169d5bbb6196cd45a4fb5b252c4ea97, type: 3}
+    - {fileID: -4493841171148374118, guid: a7bbe8011228b0944a791f42c36bb084, type: 3}
+    - {fileID: 4070849223248650287, guid: 8de90bf0fc1ea5a428d68d55a2f36642, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -30,7 +32,7 @@ MonoBehaviour:
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 7
       Data: 1|Gameplay.Configs.Attacks.PlayerBlueAttack, Assembly-CSharp
@@ -46,6 +48,24 @@ MonoBehaviour:
     - Name: ChainCount
       Entry: 3
       Data: 4
+    - Name: Damage
+      Entry: 4
+      Data: 6
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 2|Gameplay.Configs.Attacks.PlayerWhiteAttack, Assembly-CSharp
+    - Name: ProjectilePrefab
+      Entry: 10
+      Data: 3
+    - Name: HitVFX
+      Entry: 10
+      Data: 4
+    - Name: Damage
+      Entry: 4
+      Data: 5
     - Name: 
       Entry: 8
       Data: 

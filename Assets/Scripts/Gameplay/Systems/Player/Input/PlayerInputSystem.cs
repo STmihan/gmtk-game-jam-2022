@@ -19,9 +19,9 @@ namespace Gameplay.Systems.Player.Input
 
         public void Run()
         {
-            if (UnityEngine.Input.GetButtonDown("Fire1")) 
+            if (UnityEngine.Input.GetButton("Fire1")) 
                 _world.NewEntity().Get<PlayerInputAttackEvent>();
-            if(UnityEngine.Input.GetButtonDown("Fire2"))
+            if(UnityEngine.Input.GetButton("Fire2"))
                 _world.NewEntity().Get<PlayerInputSecondaryAttackEvent>();
             if(UnityEngine.Input.GetKeyDown(KeyCode.Alpha1))
             {

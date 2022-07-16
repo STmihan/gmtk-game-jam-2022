@@ -21,7 +21,11 @@ namespace Gameplay.Systems.Enemy.Setup
 
                 movementComponent.Speed = config.MoveSpeed;
                 rotationComponent.Duration = config.RotationDuration;
-                _filter.GetEntity(i).Get<InitedTag>();
+                var entity = _filter.GetEntity(i);
+                ref var enemyHp = ref entity.Get<HpComponent>();
+                enemyHp.MaxHp = config.MaxHp;
+                enemyHp.Hp = config.MaxHp;
+                entity.Get<InitedTag>();
             }
         }
     }

@@ -12,7 +12,7 @@ namespace Gameplay.Configs
         [Header("Player")]
         public float PlayerMovementSpeed;
         public float PlayerRotationDuration;
-        public float PlayerAttackSpeed;
+        public float PlayerAttackDelay;
         public float PlayerProjectileSpeed;
     }
 }

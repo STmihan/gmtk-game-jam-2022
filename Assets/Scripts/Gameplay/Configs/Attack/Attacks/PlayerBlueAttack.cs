@@ -11,5 +11,6 @@ namespace Gameplay.Configs.Attacks
         public VFXView Trail;
         public VFXView Explosion;
         public int ChainCount = 4;
+        public float Damage;
     }
 }
