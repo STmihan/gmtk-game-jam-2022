@@ -11,14 +11,15 @@ namespace Gameplay
 {
     internal sealed class EcsStartup : MonoBehaviour
     {
-        [InlineEditor]
-        [SerializeField] 
+        [InlineEditor] [SerializeField] 
         private PlayerConfig _playerConfig;
-        [InlineEditor]
-        [ReadOnly]
-        [SerializeField]
-        private EnemiesConfig _enemiesConfig;
-        
+
+        [InlineEditor] [SerializeField] 
+        private EnemySpawnConfig _enemySpawnConfig;
+
+        [InlineEditor] [ReadOnly] [SerializeField]
+        private EnemyStatsConfig _enemyStatsConfig;
+
         private EcsWorld _world;
         private EcsSystems _systems;
         private Camera _camera;
@@ -46,7 +47,8 @@ namespace Gameplay
                 .Add(new PlayerMovementSystem())
                 .Add(new PlayerRotationSystem())
                 .Inject(_playerConfig)
-                .Inject(_enemiesConfig)
+                .Inject(_enemyStatsConfig)
+                .Inject(_enemySpawnConfig)
                 .Inject(_camera)
                 .Init();
         }

@@ -14,6 +14,7 @@ namespace Gameplay.Configs.Enemies
         public float RotationDuration;
         public float DelayBetweenHits;
         public float Range;
-        public string Type => GetType().ToString();
+        [ShowInInspector]
+        public Type Type => GetType();
     }
 }

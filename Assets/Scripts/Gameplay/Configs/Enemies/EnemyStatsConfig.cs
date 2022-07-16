@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Gameplay.Configs.Enemies
 {
     [CreateAssetMenu]
-    public class EnemiesConfig : SerializedScriptableObject
+    public class EnemyStatsConfig : SerializedScriptableObject
     {
         public List<Enemy> Enemies = new();
     }
