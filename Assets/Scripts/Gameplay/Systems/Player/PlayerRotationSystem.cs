@@ -3,6 +3,7 @@ using Gameplay.Components.Player;
 using Gameplay.Components.Share;
 using Gameplay.Configs;
 using Leopotam.Ecs;
+using UnityEngine;
 
 namespace Gameplay.Systems.Player
 {
@@ -18,7 +19,8 @@ namespace Gameplay.Systems.Player
                 ref var gameObjectComponent = ref _filter.Get2(i);
                 ref var rotationComponent = ref _filter.Get3(i);
                 var transform = gameObjectComponent.GameObject.transform;
-                transform.DOLookAt(rotationComponent.InDirection, _playerConfig.PlayerRotationDuration);
+                transform.DOLookAt(new Vector3(rotationComponent.InDirection.x, transform.position.y,
+                    rotationComponent.InDirection.z), _playerConfig.PlayerRotationDuration);
             }
         }
     }

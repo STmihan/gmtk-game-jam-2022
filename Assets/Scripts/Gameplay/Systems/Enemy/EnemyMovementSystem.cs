@@ -9,7 +9,7 @@ namespace Gameplay.Systems.Enemy
     public class EnemyMovementSystem : IEcsRunSystem
     {
         private EnemyStatsConfig _config;
-        private EcsFilter<EnemyTag, MovementComponent, RotationComponent, GameObjectComponent, InitedTag> _enemyFilter;
+        private EcsFilter<EnemyTag, MovementComponent, RotationComponent, GameObjectComponent, CharacterControllerComponent, InitedTag> _enemyFilter;
 
         public void Run()
         {
@@ -19,10 +19,11 @@ namespace Gameplay.Systems.Enemy
                 var enemyConfig = _config.GetConfigByType<Configs.Enemies.Stats.Enemy>(type);
                 var movementComponent = _enemyFilter.Get2(i);
                 var enemyTransform = _enemyFilter.Get4(i).GameObject.transform;
+                var controller = _enemyFilter.Get5(i).CharacterController;
                 if (Vector3.Distance(enemyTransform.position, movementComponent.Direction) > enemyConfig.Range)
                 {
-                    enemyTransform.position = Vector3.Lerp(enemyTransform.position, movementComponent.Direction,
-                        Time.deltaTime * movementComponent.Speed / 10);
+                    var direction = (movementComponent.Direction - enemyTransform.position).normalized;
+                    controller.Move(direction * (Time.deltaTime * movementComponent.Speed));
                 }
             }
         }

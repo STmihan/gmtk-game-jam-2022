@@ -31,6 +31,9 @@ namespace Gameplay.Systems.Enemy
                     enemySpawnEvent.Position,
                     Quaternion.identity);
                 enemyTag.Type = enemySpawnEvent.Type;
+                ref var characterControllerComponent = ref entity.Get<CharacterControllerComponent>();
+                characterControllerComponent.CharacterController =
+                    gameObjectComponent.GameObject.GetComponent<CharacterController>();
                 _filter.GetEntity(i).Del<EnemySpawnEvent>();
             }
         }
