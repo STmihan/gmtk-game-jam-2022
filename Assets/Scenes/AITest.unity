@@ -342,7 +342,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 202800580}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.0345802, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -566,7 +566,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.3531157, y: 1}
+    m_SensorSize: {x: 1.0816023, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1514,6 +1514,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value:
     Spawn: {x: 0, y: 0, z: 0}
+  _enemySpawnConfig: {fileID: 11400000, guid: 884cdb0c4250154468728df945a3358f, type: 2}
   _playerSpawn: {fileID: 848301551}
 --- !u!114 &848301553
 MonoBehaviour:
@@ -2563,5 +2564,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerConfig: {fileID: 11400000, guid: ec309a13046fe0a47a0f6939259688ac, type: 2}
-  _enemySpawnConfig: {fileID: 0}
+  _enemySpawnConfig: {fileID: 11400000, guid: 884cdb0c4250154468728df945a3358f, type: 2}
   _enemyStatsConfig: {fileID: 11400000, guid: d5c38119d0c489d4a98ba55b30fd05fe, type: 2}

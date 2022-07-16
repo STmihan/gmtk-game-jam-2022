@@ -1,10 +1,11 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Gameplay.Components
 {
-    public class EnemySpawnEvent
+    public struct EnemySpawnEvent
     {
         public Vector3 Position;
-        public string Type;
+        public Type Type;
     }
 }

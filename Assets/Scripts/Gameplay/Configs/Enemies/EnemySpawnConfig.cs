@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using Sirenix.OdinInspector;
-using Sirenix.Serialization;
 using UnityEngine;
 
 namespace Gameplay.Configs.Enemies
@@ -10,7 +7,12 @@ namespace Gameplay.Configs.Enemies
     [CreateAssetMenu]
     public class EnemySpawnConfig : SerializedScriptableObject
     {
-        public AnimationCurve EnemyCount;
+        public float MaxTimeInMinutes;
+        public float EnemySpawnRadius;
+        public float EnemySpawnDelta;
+        public AnimationCurve EnemySpawnPerWaveCount;
+        public float TimeBetweenWave;
+        [Space]
         public List<EnemySpawnStat> EnemySpawnStats = new();
     }
 }

@@ -676,36 +676,31 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  EnemyCount:
+  MaxTimeInMinutes: 30
+  EnemySpawnRadius: 40
+  EnemySpawnDelta: 12
+  EnemySpawnPerWaveCount:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
+      value: 20
+      inSlope: 80
+      outSlope: 80
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0.61087453
-      value: 0.17329599
-      inSlope: 0.6788336
-      outSlope: 0.6788336
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.2586517
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
-      value: 1
-      inSlope: 2
-      outSlope: 2
-      tangentMode: 0
+      value: 100
+      inSlope: 80
+      outSlope: 80
+      tangentMode: 34
       weightedMode: 0
-      inWeight: 0
+      inWeight: 0.33333334
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  TimeBetweenWave: 30

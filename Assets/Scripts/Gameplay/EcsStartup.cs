@@ -2,6 +2,8 @@ using Gameplay.Components;
 using Gameplay.Configs;
 using Gameplay.Configs.Enemies;
 using Gameplay.Systems;
+using Gameplay.Systems.Enemy;
+using Gameplay.Systems.Share;
 using Leopotam.Ecs;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -37,6 +39,7 @@ namespace Gameplay
             _systems
                 .ConvertScene()
                 .OneFrame<PlayerInputAttackEvent>()
+                .Add(new TimeSystem())
                 .Add(new PlayerViewSetupSystem())
                 .Add(new PlayerMovementSetupSystem())
                 .Add(new PlayerRotationSetupSystem())
@@ -46,6 +49,10 @@ namespace Gameplay
                 .Add(new SetPlayerRotationDirectionSystem())
                 .Add(new PlayerMovementSystem())
                 .Add(new PlayerRotationSystem())
+                .Add(new EnemyManagerSystem())
+                .Add(new EnemyGenerateSpawnPositionSystem())
+                .Add(new EnemySpawnSystem())
+                .Add(new EnemySetupSystem())
                 .Inject(_playerConfig)
                 .Inject(_enemyStatsConfig)
                 .Inject(_enemySpawnConfig)
