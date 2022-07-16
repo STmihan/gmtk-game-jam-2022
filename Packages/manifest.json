@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.leopotam.ecs": "file:../Deps/ecs-2022.4.22",
-    "com.leopotam.ecs-unityintegration": "file:../Deps/ecs-unityintegration-2022.3.22",
+    "com.leopotam.ecs-unityintegration": "https://github.com/Leopotam/ecs-unityintegration.git",
     "com.unity.cinemachine": "2.8.6",
     "com.unity.collab-proxy": "1.15.17",
     "com.unity.ide.rider": "3.0.14",

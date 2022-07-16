@@ -55,10 +55,11 @@ namespace Gameplay
                 .Add(new EnemySetupSystem())
                 .Add(new EnemyMovementSystem())
                 .Inject(_playerConfig)
-                .Inject(_enemyStatsConfig)
                 .Inject(_enemySpawnConfig)
+                .Inject(_enemyStatsConfig)
                 .Inject(_camera)
                 .Init();
+
         }
 
         private void Update()

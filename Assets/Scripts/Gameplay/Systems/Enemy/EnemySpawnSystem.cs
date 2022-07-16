@@ -25,7 +25,7 @@ namespace Gameplay.Systems.Enemy
                 var enemy = _enemyStatsConfig.Enemies.FirstOrDefault(enemy => enemy.Type == enemySpawnEvent.Type);
                 if (enemy != null)
                     gameObjectComponent.GameObject = Object.Instantiate(
-                        enemy.Prefab, 
+                        enemy.Prefab,
                         enemySpawnEvent.Position,
                         Quaternion.identity);
                 _filter.GetEntity(i).Del<EnemySpawnEvent>();
