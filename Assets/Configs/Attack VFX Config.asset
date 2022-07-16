@@ -25,6 +25,8 @@ MonoBehaviour:
     - {fileID: -8056331375218627505, guid: f5547c89a031c2948a83b27ee0ae9ff3, type: 3}
     - {fileID: 3593515385178816457, guid: 7cb56b1e84bf342429247739f2973b5e, type: 3}
     - {fileID: -4887663525309678185, guid: c11bd6760b2c54240916081c4f2b9264, type: 3}
+    - {fileID: -4048652416525185937, guid: 7f4707b8eb3f243458a2b9f206b6d0bd, type: 3}
+    - {fileID: 4070849223248650287, guid: 13880c387e0ba8045964630d09e66bc6, type: 3}
     - {fileID: -4493841171148374118, guid: a7bbe8011228b0944a791f42c36bb084, type: 3}
     - {fileID: 4070849223248650287, guid: 8de90bf0fc1ea5a428d68d55a2f36642, type: 3}
     SerializedBytesString: 
@@ -112,11 +114,20 @@ MonoBehaviour:
       Entry: 7
       Data: 4|Gameplay.Configs.Attacks.PlayerFireAttack, Assembly-CSharp
     - Name: PlayerProjectilePrefab
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 9
     - Name: ExplosionVFX
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 5
+    - Name: CircleVfx
+      Entry: 10
+      Data: 10
+    - Name: Damage
+      Entry: 3
+      Data: 7
+    - Name: Radius
+      Entry: 4
+      Data: 5
     - Name: 
       Entry: 8
       Data: 
@@ -125,10 +136,10 @@ MonoBehaviour:
       Data: 5|Gameplay.Configs.Attacks.PlayerWhiteAttack, Assembly-CSharp
     - Name: PlayerProjectilePrefab
       Entry: 10
-      Data: 9
+      Data: 11
     - Name: HitVFX
       Entry: 10
-      Data: 10
+      Data: 12
     - Name: Damage
       Entry: 4
       Data: 5

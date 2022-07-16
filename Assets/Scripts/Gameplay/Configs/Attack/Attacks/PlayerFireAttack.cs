@@ -1,6 +1,7 @@
 ﻿using System;
 using Gameplay.UnityComponents;
 using Sirenix.OdinInspector;
+using UnityEngine;
 
 namespace Gameplay.Configs.Attacks
 {
@@ -9,5 +10,10 @@ namespace Gameplay.Configs.Attacks
     {
         [PreviewField]
         public VFXView ExplosionVFX;
+
+        public VFXView CircleVfx;
+        
+        public int Damage = 7;
+        public float Radius = 5;
     }
 }
