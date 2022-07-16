@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8350821171393784787}
   - component: {fileID: 8489256729456603287}
+  - component: {fileID: -2381329256804041620}
+  - component: {fileID: 3288477736029310515}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -51,6 +53,40 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 2, z: 0}
+--- !u!114 &-2381329256804041620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8350821171393784791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 863c7f7460b2b49abb4fa9a7ff9cb180, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  convertMode: 0
+--- !u!114 &3288477736029310515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8350821171393784791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0664ba0e80c7bb14e8fd91a028c1de9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    startShootingPosition: {fileID: 0}
+    maskDetecting:
+      serializedVersion: 2
+      m_Bits: 64
+    hitCount: 0
+    radiusImpact: 6
+    hits: 0
+    currentHitObjects: []
 --- !u!1001 &8350821170514435069
 PrefabInstance:
   m_ObjectHideFlags: 0
