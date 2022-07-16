@@ -11,5 +11,8 @@ namespace Gameplay.Configs.Attacks
         public VFXView ChargeVFX;
         [PreviewField]
         public VFXView ExplosionVFX;
+        public float Radius = 5;
+        public float TimeBeforeHit = 1;
+        public float Damage = 10;
     }
 }
