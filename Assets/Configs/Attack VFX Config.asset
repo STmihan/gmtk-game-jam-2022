@@ -30,6 +30,7 @@ MonoBehaviour:
     - {fileID: 4070849223248650287, guid: 328c7d7585cf4544e95edb16fd4fd69c, type: 3}
     - {fileID: -7856862592207580896, guid: f2fe08f4811e5bd419616f482c716a38, type: 3}
     - {fileID: -8056331375218627505, guid: f5547c89a031c2948a83b27ee0ae9ff3, type: 3}
+    - {fileID: 8300000, guid: 7486940701f0dd9438c00579e502a34b, type: 3}
     - {fileID: 8300000, guid: 457f598e4c2bc7f4e85acc89a37bdbfe, type: 3}
     - {fileID: 3593515385178816457, guid: 7cb56b1e84bf342429247739f2973b5e, type: 3}
     - {fileID: -4887663525309678185, guid: c11bd6760b2c54240916081c4f2b9264, type: 3}
@@ -39,10 +40,14 @@ MonoBehaviour:
     - {fileID: 4070849223248650287, guid: 8de90bf0fc1ea5a428d68d55a2f36642, type: 3}
     - {fileID: -524870652015700731, guid: 0f394d58196d4874cad3b9ec4485e811, type: 3}
     - {fileID: 1598510078412016403, guid: 48f1991287594f749a362afd4ef6b91c, type: 3}
+    - {fileID: 8300000, guid: ff218f2e84058b848bcd5430b53c83a9, type: 3}
+    - {fileID: 8300000, guid: edad618656454a44bbbf2ceb74e55439, type: 3}
     - {fileID: 4070849223248650287, guid: 361572984275caf4aa12cd0bf1bf37b3, type: 3}
     - {fileID: 1598510078412016403, guid: 0ecb05779afe9b242b2fbd45ba286f89, type: 3}
+    - {fileID: 8300000, guid: 838a087e01a8384498f245830250f841, type: 3}
     - {fileID: 5084353894263820763, guid: 0b47fd0877a7eb24b9db4315ba95f451, type: 3}
     - {fileID: 4070849223248650287, guid: e43cc30e6c08e574097c4c593475ddf5, type: 3}
+    - {fileID: 8300000, guid: 167083c0efaa9154fb680866f7367fd0, type: 3}
     - {fileID: 7752028222907906798, guid: cc2e66aa282937b4381acd7b9298932e, type: 3}
     - {fileID: -7294285029619834316, guid: 7dc994e885826b6429e582df7bc0d4cf, type: 3}
     - {fileID: -4887663525309678185, guid: 4723a48f1c9ee154083acb61d957980d, type: 3}
@@ -151,17 +156,17 @@ MonoBehaviour:
       Entry: 10
       Data: 13
     - Name: ThrowSound
-      Entry: 6
-      Data: 
-    - Name: HitSound
       Entry: 10
       Data: 14
-    - Name: HitVFX
+    - Name: HitSound
       Entry: 10
       Data: 15
-    - Name: TopVFX
+    - Name: HitVFX
       Entry: 10
       Data: 16
+    - Name: TopVFX
+      Entry: 10
+      Data: 17
     - Name: Damage
       Entry: 3
       Data: 12
@@ -179,16 +184,16 @@ MonoBehaviour:
       Data: 5|Gameplay.Configs.Attacks.PlayerWhiteAttack, Assembly-CSharp
     - Name: ProjectilePrefab
       Entry: 10
-      Data: 17
+      Data: 18
     - Name: ThrowSound
       Entry: 10
-      Data: 18
+      Data: 19
     - Name: HitSound
       Entry: 10
-      Data: 19
+      Data: 20
     - Name: HitVFX
       Entry: 10
-      Data: 20
+      Data: 21
     - Name: Damage
       Entry: 3
       Data: 5
@@ -200,16 +205,16 @@ MonoBehaviour:
       Data: 6|Gameplay.Configs.Attacks.EnemyBlueAttack, Assembly-CSharp
     - Name: ProjectilePrefab
       Entry: 10
-      Data: 21
+      Data: 22
     - Name: ThrowSound
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 6
     - Name: HitSound
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 7
     - Name: HitVFX
       Entry: 10
-      Data: 22
+      Data: 23
     - Name: 
       Entry: 8
       Data: 
@@ -220,17 +225,17 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: ThrowSound
-      Entry: 6
-      Data: 
-    - Name: HitSound
-      Entry: 6
-      Data: 
-    - Name: ChargeVfx
-      Entry: 10
-      Data: 23
-    - Name: HitVFX
       Entry: 10
       Data: 24
+    - Name: HitSound
+      Entry: 10
+      Data: 25
+    - Name: ChargeVfx
+      Entry: 10
+      Data: 26
+    - Name: HitVFX
+      Entry: 10
+      Data: 27
     - Name: 
       Entry: 8
       Data: 
@@ -244,14 +249,14 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: HitSound
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 28
     - Name: ExplosionVFX
       Entry: 10
-      Data: 25
+      Data: 29
     - Name: CircleVFX
       Entry: 10
-      Data: 26
+      Data: 30
     - Name: 
       Entry: 8
       Data: 
@@ -265,11 +270,11 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: HitSound
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 31
     - Name: TrailVFX
       Entry: 10
-      Data: 27
+      Data: 32
     - Name: 
       Entry: 8
       Data: 
@@ -280,23 +285,23 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: ThrowSound
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 14
     - Name: HitSound
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 15
     - Name: BottomVfx
       Entry: 10
-      Data: 28
+      Data: 33
     - Name: TopVFX
       Entry: 10
-      Data: 29
+      Data: 34
     - Name: HitVFX
       Entry: 10
-      Data: 30
+      Data: 35
     - Name: ShootVFX
       Entry: 10
-      Data: 31
+      Data: 36
     - Name: 
       Entry: 8
       Data: 

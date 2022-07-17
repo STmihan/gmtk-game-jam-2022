@@ -88,11 +88,11 @@ namespace Gameplay.Systems.Enemy.Attack
                 LayerMask.GetMask("Player"));
             foreach (var collider in result)
             {
-                SoundController.Play(config.HitSound);
                 if (collider == null) continue;
                 hpComponent.Hp -= statsConfig.Damage;
                 _world.NewEntity().Get<CameraShakeComponent>();
             }
+            SoundController.Play(config.HitSound);
         }
     }
 }
