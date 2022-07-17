@@ -1,7 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Sprites/Ui.meta
 guid: 8d81389dcf43f8c4897c021262820a8f
 folderAsset: yes
 DefaultImporter:
+========
+guid: b600cc053a88d234da9cbfdd53c0b3c0
+PrefabImporter:
+>>>>>>>> b48fde2 (Adding gameplay ui and pause ui):Assets/Prefabs/VFX/Enemy/Brown/BottomBrown.prefab.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
