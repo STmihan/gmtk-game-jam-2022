@@ -68,7 +68,6 @@ namespace Gameplay
                 .Add(new UIProviderSystem())
                 .OneFrame<HitEvent>()
                 .OneFrame<AttackEvent>()
-                .OneFrame<OnEnemyDieEvent>()
                 .Inject(_playerConfig)
                 .Inject(_enemyStatsConfig)
                 .Inject(_enemySpawnConfig)
