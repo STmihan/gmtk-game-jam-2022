@@ -180,16 +180,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Music: {fileID: 2821577968800739827}
-  WhiteHit: {fileID: 2068000336117867161}
-  FireHit: {fileID: 4590625698130538900}
-  LightningHit: {fileID: 7336591769676345765}
-  EarthHit: {fileID: 7336591769676345765}
-  DarkHit: {fileID: 5878097298001119325}
-  WhiteShoot: {fileID: 8131957636469727841}
-  FireShoot: {fileID: 6190008080351554210}
-  LightningShoot: {fileID: 5878097298001119325}
-  EarthShoot: {fileID: 5878097298001119325}
-  DarkShoot: {fileID: 5878097298001119325}
+  Sounds: {fileID: 0}
+  InterfaceClick: {fileID: 8300000, guid: a8e6365257f46164c9318d729e687847, type: 3}
 --- !u!82 &2821577968800739827
 AudioSource:
   m_ObjectHideFlags: 0
