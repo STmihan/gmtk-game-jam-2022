@@ -56,8 +56,7 @@ namespace Gameplay.Systems.Enemy.Attack
                         startPos.y = 1;
                         var ray = new Ray(startPos,
                             (endPoint - startPos).normalized * statsConfig.ChargeDistance);
-                        RaycastHit hit;
-                        if (Physics.Raycast(ray, out hit, statsConfig.ChargeDistance, LayerMask.GetMask("Player")))
+                        if (Physics.Raycast(ray, out _, statsConfig.ChargeDistance, LayerMask.GetMask("Player")))
                         {
                             ref var hpComponent = ref _playerFilter.Get3(p);
                             hpComponent.Hp -= statsConfig.Damage;
