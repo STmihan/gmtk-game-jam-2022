@@ -14,6 +14,7 @@ namespace Gameplay.Systems.Player.Attack
         private EcsFilter<PlayerInputSecondaryAttackEvent> _secondaryAttackEventFilter;
         private EcsFilter<PlayerActiveWeaponComponent> _activeWeapon;
         private EcsFilter<PlayerTag, CharacterViewComponent, CanAttackTag> _playerFilter;
+        private EcsFilter<PlayerDicesCountComponent> _diceCountFilter;
         private EcsWorld _world;
         private AttackConfig _config;
         private PlayerConfig _playerConfig;
@@ -30,10 +31,18 @@ namespace Gameplay.Systems.Player.Attack
 
         private void Shoot(int weapon)
         {
+            foreach (var j in _diceCountFilter)
             foreach (var i in _playerFilter)
             {
-                var entity = _world.NewEntity();
                 var config = _config.Attacks[weapon];
+                var type = config.Type;
+                var dic = _diceCountFilter.Get1(j).Value;
+                if (dic.ContainsKey(type))
+                {
+                    if (dic[type] <= 0) continue;
+                    dic[type] -= 1;
+                }
+                var entity = _world.NewEntity();
                 var firePoint = _playerFilter.Get2(i).View.FirePoint;
                 var direction = firePoint.forward;
                 var view = Object.Instantiate(config.ProjectilePrefab, firePoint.position, Quaternion.identity);

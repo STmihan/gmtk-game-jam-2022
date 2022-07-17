@@ -1,4 +1,5 @@
 using Gameplay.Components;
+using Gameplay.Components.Enemy;
 using Gameplay.Components.Player;
 using Gameplay.Components.Share.Attack;
 using Gameplay.Configs;
@@ -58,6 +59,7 @@ namespace Gameplay
                 .Add(new CameraSetupSystem())
                 .OneFrame<HitEvent>()
                 .OneFrame<AttackEvent>()
+                .OneFrame<OnEnemyDieEvent>()
                 .Inject(_playerConfig)
                 .Inject(_enemyStatsConfig)
                 .Inject(_enemySpawnConfig)

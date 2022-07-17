@@ -35,7 +35,7 @@ namespace Gameplay.Systems.Enemy.Setup
                     Quaternion.identity);
                 
                 enemyTag.Type = enemySpawnEvent.Type;
-                
+
                 _filter.GetEntity(i).Del<EnemySpawnEvent>();
             }
         }
