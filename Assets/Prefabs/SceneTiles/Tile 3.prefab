@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 984197857060015815}
   - component: {fileID: 1540234985877203895}
   - component: {fileID: 4960976113467127547}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: o_house
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &984197857060015815
 Transform:
@@ -156,12 +156,12 @@ GameObject:
   - component: {fileID: 3222128224359609487}
   - component: {fileID: 8745934223982902233}
   - component: {fileID: 4720037062090147536}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: o_bush-small-dead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &3222128224359609487
 Transform:
@@ -239,12 +239,12 @@ GameObject:
   - component: {fileID: 6857281523136275250}
   - component: {fileID: 1738794091124207912}
   - component: {fileID: 3606131086669922497}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: o_small-tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &6857281523136275250
 Transform:
@@ -322,12 +322,12 @@ GameObject:
   - component: {fileID: 3331933606792371626}
   - component: {fileID: 3507381633107507833}
   - component: {fileID: 8928824876966593898}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: o_rocks3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &3331933606792371626
 Transform:
@@ -405,12 +405,12 @@ GameObject:
   - component: {fileID: 9055313010717222093}
   - component: {fileID: 4109043174723640375}
   - component: {fileID: 6818450621963545684}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: o_rocks1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &9055313010717222093
 Transform:
@@ -488,12 +488,12 @@ GameObject:
   - component: {fileID: 665917326163952564}
   - component: {fileID: 1840121824160474775}
   - component: {fileID: 7567587364498675968}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: o_bush-small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &665917326163952564
 Transform:
@@ -571,12 +571,12 @@ GameObject:
   - component: {fileID: 5686667354137585076}
   - component: {fileID: 6206955241028174020}
   - component: {fileID: 548144021706038664}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: o_house
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &5686667354137585076
 Transform:
@@ -654,12 +654,12 @@ GameObject:
   - component: {fileID: 8415487145557129947}
   - component: {fileID: 7209515883891871067}
   - component: {fileID: 1257309777785368689}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: o_bush-big-dead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &8415487145557129947
 Transform:
@@ -799,12 +799,12 @@ GameObject:
   - component: {fileID: 2629587483923320859}
   - component: {fileID: 7755096885545265760}
   - component: {fileID: 7289300516121766448}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: o_rocks4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2629587483923320859
 Transform:
@@ -882,12 +882,12 @@ GameObject:
   - component: {fileID: 6828401700329024067}
   - component: {fileID: 6828401700329024066}
   - component: {fileID: 6828401700329024065}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: o_rocks1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &6828401700329024067
 Transform:
@@ -897,7 +897,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6828401700329024064}
   m_LocalRotation: {x: -0.10340322, y: 0.6995055, z: 0.69950527, w: 0.103403226}
-  m_LocalPosition: {x: 38.6, y: 0.1, z: -7.1}
+  m_LocalPosition: {x: 37.69, y: 0.1, z: -10.63}
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -979,7 +979,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6828401702104502604}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 35.37, y: -0.79, z: -21.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1025,7 +1025,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &6828401702197072926
 Transform:
@@ -1117,12 +1117,12 @@ GameObject:
   - component: {fileID: 1590888779136852665}
   - component: {fileID: 4187246993617547973}
   - component: {fileID: 1749880826853648595}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: o_rocks2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1590888779136852665
 Transform:
@@ -1198,7 +1198,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6073928171131606728}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: GFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1245,12 +1245,12 @@ GameObject:
   - component: {fileID: 8604041655096625009}
   - component: {fileID: 1421908815186037198}
   - component: {fileID: 5118427656908358757}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: o_medium-tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &8604041655096625009
 Transform:
@@ -1328,12 +1328,12 @@ GameObject:
   - component: {fileID: 8349334669636020117}
   - component: {fileID: 3435836743403945570}
   - component: {fileID: 7495926159216637568}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: o_big-bush
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &8349334669636020117
 Transform:
@@ -1411,12 +1411,12 @@ GameObject:
   - component: {fileID: 2876286260802822529}
   - component: {fileID: 5560777615402163412}
   - component: {fileID: 3233356105724725982}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: o_rocks5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2876286260802822529
 Transform:
