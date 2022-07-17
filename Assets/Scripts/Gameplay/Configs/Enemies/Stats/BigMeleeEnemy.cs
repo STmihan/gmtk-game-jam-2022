@@ -6,6 +6,7 @@ namespace Gameplay.Configs.Enemies.Stats
     public class BigMeleeEnemy : Enemy
     {
         public float DelayBeforeHit;
+        public float DelayBeforeExplosion;
         public int Damage;
         public float AoeRadius;
     }

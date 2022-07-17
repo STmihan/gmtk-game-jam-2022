@@ -22,7 +22,7 @@ namespace Gameplay.Systems.Player.Attack.Types
             {
                 var hit = _firestHitFilter.Get1(i);
                 var type = hit.Type;
-                if (type != typeof(PlayerBlueAttack)) return;
+                if (type != typeof(PlayerBlueAttack)) continue;
                 var config = (PlayerBlueAttack)_config.Attacks.FirstOrDefault(attack => attack.Type == type);
                 if (config == null) continue;
                 var trail = config.Trail;

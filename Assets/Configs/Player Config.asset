@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerPrefab: {fileID: 3872057581039948996, guid: 509db8c875e0ee64caee93df8f40a30f,
     type: 3}
+  PlayerMaxHp: 40
   PlayerMovementSpeed: 8
   PlayerRotationDuration: 0.2
   PlayerAttackDelay: 1

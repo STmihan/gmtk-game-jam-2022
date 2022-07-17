@@ -1,6 +1,8 @@
 ﻿using Gameplay.Systems.Enemy;
+using Gameplay.Systems.Enemy.Attack;
 using Gameplay.Systems.Enemy.Movement;
 using Gameplay.Systems.Enemy.Setup;
+using Gameplay.Systems.Player;
 using Gameplay.Systems.Player.Attack;
 using Gameplay.Systems.Player.Attack.Types;
 using Gameplay.Systems.Player.Input;
@@ -21,7 +23,12 @@ namespace Gameplay
                          .Add(new EnemySetDirectionSystem())
                          .Add(new EnemyMovementSystem())
                          .Add(new EnemyRotationSystem())
-                         .Add(new EnemyDieSystem());
+                         .Add(new EnemyDieSystem())
+                         .Add(new BlueEnemyAttackSystem())
+                         .Add(new BlueEnemyHitSystem())
+                         .Add(new DarkEnemyAttackSystem())
+                         .Add(new FireSuicideEnemyAttackSystem())
+                         .Add(new FireChargeEnemyAttackSystem());
         }
         
         public static EcsSystems AddPlayerSystems(this EcsSystems system)
@@ -37,6 +44,7 @@ namespace Gameplay
                          .Add(new PlayerRotationSystem())
                          .Add(new PlayerAttackSystem())
                          .Add(new PlayerChangeActiveWeaponSystem())
+                         .Add(new PlayerHpSystem())
                          .Add(new PlayerWhiteAttackSystem())
                          .Add(new PlayerBlueAttackSystem())
                          .Add(new PlayerBrownAttackSystem())

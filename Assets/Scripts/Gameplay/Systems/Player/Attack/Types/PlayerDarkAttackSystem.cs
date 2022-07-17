@@ -26,7 +26,7 @@ namespace Gameplay.Systems.Player.Attack.Types
             {
                 var hit = _filter.Get1(i);
                 var type = hit.Type;
-                if (type != typeof(PlayerDarkAttack)) return;
+                if (type != typeof(PlayerDarkAttack)) continue;
                 var config = (PlayerDarkAttack)_config.Attacks.FirstOrDefault(attack => attack.Type == type);
                 if (config == null) continue;
                 var playerTransform = _playerFilter.Get2(p).View.transform;

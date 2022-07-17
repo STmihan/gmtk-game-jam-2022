@@ -21,7 +21,7 @@ namespace Gameplay.Systems.Player.Attack.Types
             {
                 var hit = _filter.Get1(i);
                 var type = hit.Type;
-                if(type != typeof(PlayerWhiteAttack)) return;
+                if(type != typeof(PlayerWhiteAttack)) continue;
                 var config = (PlayerWhiteAttack)_config.Attacks.FirstOrDefault(attack => attack.Type == type);
                 if (config == null) continue;
                 var vfxPrefab = config.HitVFX;

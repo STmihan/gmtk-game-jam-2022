@@ -23,7 +23,7 @@ namespace Gameplay.Systems.Player.Attack.Types
             {
                 var hit = _filter.Get1(i);
                 var type = hit.Type;
-                if (type != typeof(PlayerBrownAttack)) return;
+                if (type != typeof(PlayerBrownAttack)) continue;
                 var config = (PlayerBrownAttack)_config.Attacks.FirstOrDefault(attack => attack.Type == type);
                 if (config == null) continue;
                 var top = Object.Instantiate(

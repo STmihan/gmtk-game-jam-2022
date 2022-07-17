@@ -13,6 +13,8 @@ namespace Gameplay.Systems.Enemy.Movement
         {
             foreach (var i in _enemyFilter)
             {
+                var entity = _enemyFilter.GetEntity(i);
+                if (entity.Has<IsAttackingTimer>()) return;
                 var rotationComponent = _enemyFilter.Get2(i);
                 var enemyTransform = _enemyFilter.Get3(i).View.transform;
                 enemyTransform.DOLookAt(rotationComponent.InDirection, rotationComponent.Duration);
