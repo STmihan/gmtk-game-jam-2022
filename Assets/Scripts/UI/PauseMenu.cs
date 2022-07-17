@@ -1,6 +1,8 @@
 ﻿using System;
+using Music;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace UI
@@ -10,8 +12,7 @@ namespace UI
         [SerializeField] private Transform _window;
         [SerializeField] private Button _resumeButton;
         [SerializeField] private Button _quitButton;
-        [SerializeField] private Slider _soundSlider;
-        
+
         private void Awake()
         {
             _resumeButton.onClick.AddListener(() =>
@@ -20,11 +21,7 @@ namespace UI
             });
             _quitButton.onClick.AddListener(() =>
             {
-                Application.Quit();
-            });
-            _soundSlider.onValueChanged.AddListener(arg0 =>
-            {
-                
+                SceneManager.LoadScene(1);
             });
         }
 

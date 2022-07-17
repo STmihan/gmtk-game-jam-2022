@@ -9,7 +9,7 @@ namespace Utils
     {
         private void Awake()
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(1);
         }
     }
 }

@@ -34,8 +34,12 @@ namespace Gameplay.Systems.Enemy.Attack
                 if (config == null) continue;
                 var vfxPrefab = config.HitVFX;
                 Object.Instantiate(vfxPrefab, hit.Position, Quaternion.identity);
-                ref var hpComponent = ref _playerFilter.Get3(i);
-                hpComponent.Hp -= statsConfig.Damage;
+                if (Physics.SphereCast(hit.Position, 1f, Vector3.zero, out var h, LayerMask.GetMask("Player")))
+                {
+                    ref var hpComponent = ref _playerFilter.Get3(i);
+                    hpComponent.Hp -= statsConfig.Damage;
+                }
+
                 SoundController.Play(config.HitSound);
                 _world.NewEntity().Get<CameraShakeComponent>();
                 _filter.GetEntity(i).Del<HitEvent>();

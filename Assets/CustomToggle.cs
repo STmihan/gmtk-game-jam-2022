@@ -15,11 +15,12 @@ public class CustomToggle : MonoBehaviour
     {
         _component = GetComponent<Toggle>();
         _component.onValueChanged.AddListener(Call);
+        _component.image.sprite = On;
     }
 
     private void Call(bool b)
     {
         _component.image.sprite = b ? On : Off;
-        SoundController.Mute(b);
+        SoundController.Mute(!b);
     }
 }
