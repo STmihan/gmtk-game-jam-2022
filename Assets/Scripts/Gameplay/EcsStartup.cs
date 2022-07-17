@@ -14,6 +14,7 @@ using Gameplay.Systems.Player.Input;
 using Gameplay.Systems.Player.Movement;
 using Gameplay.Systems.Player.Setup;
 using Gameplay.Systems.Share;
+using Gameplay.Systems.Tile;
 using Leopotam.Ecs;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -31,6 +32,8 @@ namespace Gameplay
         private EnemyStatsConfig _enemyStatsConfig;
         [InlineEditor] [ReadOnly] [SerializeField]
         private AttackConfig _attackConfig;
+        [SerializeField]
+        private TilesConfig _tilesConfig;
         
         private EcsWorld _world;
         private EcsSystems _systems;
@@ -54,6 +57,7 @@ namespace Gameplay
                 .Add(new TimeSystem())
                 .Add(new IsAttackingTimerSystem())
                 .Add(new ReloadAttackTimerSystem())
+                .Add(new TileSetterSystem())
                 .AddPlayerSystems()
                 .AddEnemySystems()
                 .Add(new CameraSetupSystem())
@@ -65,6 +69,7 @@ namespace Gameplay
                 .Inject(_enemySpawnConfig)
                 .Inject(_camera)
                 .Inject(_attackConfig)
+                .Inject(_tilesConfig)
                 .Init();
         }
 
