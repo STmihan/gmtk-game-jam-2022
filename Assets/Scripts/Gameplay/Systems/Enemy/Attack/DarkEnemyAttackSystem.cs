@@ -22,7 +22,9 @@ namespace Gameplay.Systems.Enemy.Attack
         private EcsFilter<PlayerTag, HpComponent> _playerFilter;
         private AttackConfig _attackConfig;
         private EnemyStatsConfig _statsConfig;
-        
+        private static readonly int AttackSpeed = Animator.StringToHash("AttackSpeed");
+        private static readonly int Attack1 = Animator.StringToHash("Attack");
+
         public void Run()
         {
             foreach (var p in _playerFilter)
@@ -35,7 +37,8 @@ namespace Gameplay.Systems.Enemy.Attack
                 var hitPoint = view.FirePoint.position;
                 var config = (EnemyDarkAttack)_attackConfig.Attacks.FirstOrDefault(attack => attack.Type == typeof(EnemyDarkAttack));
                 var statsConfig = _statsConfig.GetConfigByType<BigMeleeEnemy>(type);
-                // Start Animation
+                view.Animator.SetFloat(AttackSpeed, 1/statsConfig.DelayBeforeHit);
+                view.Animator.SetTrigger(Attack1);
                 entity.Get<IsAttackingTimer>().Time = statsConfig.DelayBeforeHit;
                 var sequence = DOTween.Sequence();
                 sequence.AppendInterval(statsConfig.DelayBeforeHit);

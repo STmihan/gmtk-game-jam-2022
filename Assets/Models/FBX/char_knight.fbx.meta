@@ -1,14 +1,14 @@
 fileFormatVersion: 2
-guid: 89632fe8a73512e46924163b410d1057
+guid: f7614c3bc3d80724c875083255cc9fa1
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable:
   - first:
-      74: 5933790304749635553
-    second: an_cannon_walk.001
+      74: -537404777740055366
+    second: an_knight_walk
   - first:
-      74: 8615987939933379410
-    second: an_cannon_attack.001
+      74: 284009013490023057
+    second: an_knight_attack
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -39,8 +39,8 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: an_cannon_walk.001
-      takeName: an_cannon_walk.001
+      name: an_knight_walk
+      takeName: an_knight_walk
       internalID: 0
       firstFrame: 0
       lastFrame: 59
@@ -68,8 +68,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: an_cannon_attack.001
-      takeName: an_cannon_attack.001
+      name: an_knight_attack
+      takeName: an_knight_attack
       internalID: 0
       firstFrame: 0
       lastFrame: 59

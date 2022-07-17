@@ -89,7 +89,7 @@ MonoBehaviour:
       Data: 3
     - Name: DelayBeforeHit
       Entry: 4
-      Data: 0.5
+      Data: 1
     - Name: DelayBeforeExplosion
       Entry: 4
       Data: 1
