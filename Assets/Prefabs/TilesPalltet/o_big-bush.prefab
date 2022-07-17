@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 7913154723260651906}
   - component: {fileID: 3576259145880715381}
   - component: {fileID: 8505336856665098391}
-  m_Layer: 0
+  - component: {fileID: 1601867857734704185}
+  m_Layer: 9
   m_Name: o_big-bush
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1601867857734704185
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7128920120122006016}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6773186, y: 0.7257739, z: 0.38162288}
+  m_Center: {x: -0.009016678, y: -0.01135062, z: 0.19081147}

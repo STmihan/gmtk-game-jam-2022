@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 1439281422872177288}
   - component: {fileID: 7698611590435487874}
   - component: {fileID: 4211609297789035218}
-  m_Layer: 0
+  - component: {fileID: 5269747992024007156}
+  m_Layer: 9
   m_Name: o_tavern
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5269747992024007156
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2783492441774811313}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2524595, y: 0.9521493, z: 3.2126644}
+  m_Center: {x: 0.02434358, y: -0.06357291, z: 1.5916656}
