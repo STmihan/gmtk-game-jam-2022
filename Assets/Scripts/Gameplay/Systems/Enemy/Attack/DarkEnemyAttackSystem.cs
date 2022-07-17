@@ -39,7 +39,7 @@ namespace Gameplay.Systems.Enemy.Attack
                 var statsConfig = _statsConfig.GetConfigByType<BigMeleeEnemy>(type);
                 view.Animator.SetFloat(AttackSpeed, 1/statsConfig.DelayBeforeHit);
                 view.Animator.SetTrigger(Attack1);
-                entity.Get<IsAttackingTimer>().Time = statsConfig.DelayBeforeHit;
+                entity.Get<IsAttackingTimer>().Time = statsConfig.DelayBeforeHit + 0.3f;
                 var sequence = DOTween.Sequence();
                 sequence.AppendInterval(statsConfig.DelayBeforeHit);
                 sequence.OnComplete(() =>
@@ -63,7 +63,7 @@ namespace Gameplay.Systems.Enemy.Attack
                         config.ChargeVfx, 
                         new Vector3(
                             view.FirePoint.transform.position.x,
-                            0.1f,
+                            0.03f,
                             view.FirePoint.transform.position.z), 
                         Quaternion.identity);
                     sequence2.Join(chargeVFX.transform.DOScaleX(statsConfig.AoeRadius, statsConfig.DelayBeforeExplosion));

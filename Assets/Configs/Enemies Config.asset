@@ -86,7 +86,7 @@ MonoBehaviour:
       Data: 4
     - Name: Range
       Entry: 4
-      Data: 3
+      Data: 6
     - Name: DelayBeforeHit
       Entry: 4
       Data: 1
