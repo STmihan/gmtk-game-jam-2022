@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6721527595322654694}
   - component: {fileID: 3308210425071321576}
   - component: {fileID: 9003981594878824441}
-  - component: {fileID: 5941556748727276671}
+  - component: {fileID: 5084353894263820763}
   m_Layer: 0
   m_Name: Explosion
   m_TagString: Untagged
@@ -978,7 +978,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 50
+        scalar: 100
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -2630,7 +2630,7 @@ ParticleSystem:
     magnitude:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 3
+      scalar: 2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -2684,7 +2684,7 @@ ParticleSystem:
     inWorldSpace: 0
     multiplyDragByParticleSize: 1
     multiplyDragByParticleVelocity: 1
-    dampen: 0.3
+    dampen: 0.5
     drag:
       serializedVersion: 2
       minMaxState: 0
@@ -4871,7 +4871,7 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
---- !u!114 &5941556748727276671
+--- !u!114 &5084353894263820763
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

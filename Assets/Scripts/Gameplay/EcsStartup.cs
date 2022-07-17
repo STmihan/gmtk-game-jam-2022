@@ -1,5 +1,6 @@
 using Gameplay.Components;
 using Gameplay.Components.Player;
+using Gameplay.Components.Share.Attack;
 using Gameplay.Configs;
 using Gameplay.Configs.Attacks;
 using Gameplay.Configs.Enemies;
@@ -50,10 +51,13 @@ namespace Gameplay
                 .OneFrame<PlayerInputChangeWeaponEvent>()
                 .OneFrame<PlayerInputSecondaryAttackEvent>()
                 .Add(new TimeSystem())
+                .Add(new IsAttackingTimerSystem())
                 .Add(new ReloadAttackTimerSystem())
                 .AddPlayerSystems()
                 .AddEnemySystems()
                 .Add(new CameraSetupSystem())
+                .OneFrame<HitEvent>()
+                .OneFrame<AttackEvent>()
                 .Inject(_playerConfig)
                 .Inject(_enemyStatsConfig)
                 .Inject(_enemySpawnConfig)

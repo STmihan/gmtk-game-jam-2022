@@ -6,9 +6,9 @@ using Utils;
 
 namespace Gameplay.UnityComponents
 {
-    public class PlayerProjectileView : MonoBehaviour
+    public class ProjectileView : MonoBehaviour
     {
-        [SerializeField] private float _destroyTime = 5;
+        private const float DESTROY_TIME = 2;
         public EcsWorld EcsWorld { get; set; }
         public LayerMask LayerMask { get; set; }
         public Type Type { get; set; }
@@ -20,7 +20,7 @@ namespace Gameplay.UnityComponents
         private void Start()
         {
             _rigidbody = GetComponent<Rigidbody>();
-            Destroy(gameObject, _destroyTime);
+            Destroy(gameObject, DESTROY_TIME);
         }
 
         private void Update()

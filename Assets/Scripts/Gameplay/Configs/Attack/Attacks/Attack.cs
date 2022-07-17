@@ -9,7 +9,7 @@ namespace Gameplay.Configs.Attacks
     public abstract class Attack
     {
         [PreviewField]
-        public PlayerProjectileView PlayerProjectilePrefab;
+        public ProjectileView ProjectilePrefab;
         [OdinSerialize] public Type Type => GetType();
     }
 }

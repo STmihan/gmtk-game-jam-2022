@@ -36,7 +36,7 @@ namespace Gameplay.Systems.Player.Attack
                 var config = _config.Attacks[weapon];
                 var firePoint = _playerFilter.Get2(i).View.FirePoint;
                 var direction = firePoint.forward;
-                var view = Object.Instantiate(config.PlayerProjectilePrefab, firePoint.position, Quaternion.identity);
+                var view = Object.Instantiate(config.ProjectilePrefab, firePoint.position, Quaternion.identity);
                 view.Type = config.Type;
                 view.LayerMask = LayerMask.GetMask("Enemies");
                 view.EcsWorld = _world;
@@ -47,7 +47,7 @@ namespace Gameplay.Systems.Player.Attack
                 attackEvent.Direction = direction;
                 attackEvent.Type = config.Type;
                 attackEvent.LayerMask = view.LayerMask;
-                attackEvent.PlayerProjectileView = view;
+                attackEvent.ProjectileView = view;
 
                 var playerEntity = _playerFilter.GetEntity(i);
                 playerEntity.Del<CanAttackTag>();

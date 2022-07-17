@@ -7,7 +7,6 @@ namespace Gameplay.Configs.Enemies.Stats
     {
         public float ChargeDistance;
         public int Damage;
-        public int DotDamage;
-        public float DotDuration;
+        public float DelayBeforeCharge;
     }
 }

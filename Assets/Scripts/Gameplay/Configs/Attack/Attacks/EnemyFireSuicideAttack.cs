@@ -9,5 +9,6 @@ namespace Gameplay.Configs.Attacks
     {
         [PreviewField]
         public VFXView ExplosionVFX;
+        public VFXView CircleVFX;
     }
 }

@@ -23,11 +23,11 @@ namespace Gameplay.Systems.Player.Attack.Types
             {
                 var hit = _filter.Get1(i);
                 var type = hit.Type;
-                if(type != typeof(PlayerFireAttack)) return;
+                if(type != typeof(PlayerFireAttack)) continue;
                 var config = (PlayerFireAttack)_config.Attacks.FirstOrDefault(attack => attack.Type == type);
                 if (config == null) continue;
                 var vfxPrefab = config.ExplosionVFX;
-                Object.Instantiate(vfxPrefab, hit.Position, Quaternion.identity);
+                var explosion = Object.Instantiate(vfxPrefab, hit.Position, Quaternion.identity);
                 var circleVfx = Object.Instantiate(config.CircleVfx, hit.Position, Quaternion.identity);
                 var sequence = DOTween.Sequence();
                 sequence.Join(circleVfx.transform.DOScaleX(config.Radius, .4f));
@@ -48,7 +48,11 @@ namespace Gameplay.Systems.Player.Attack.Types
                         Object.Instantiate(config.ExplosionVFX, view.transform.position, Quaternion.identity);
                     }
                 }
-                sequence.OnComplete(() => Object.Destroy(circleVfx.gameObject));
+                sequence.OnComplete(() =>
+                {
+                    Object.Destroy(circleVfx.gameObject);
+                    Object.Destroy(explosion.gameObject);
+                });
                 _filter.GetEntity(i).Del<HitEvent>();
             }
         }

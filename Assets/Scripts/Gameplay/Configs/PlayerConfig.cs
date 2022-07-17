@@ -9,7 +9,8 @@ namespace Gameplay.Configs
     {
         [PreviewField]
         public CharacterView PlayerPrefab;
-        [Header("Player")]
+
+        [Header("Player")] public int PlayerMaxHp;
         public float PlayerMovementSpeed;
         public float PlayerRotationDuration;
         public float PlayerAttackDelay;

@@ -9,7 +9,7 @@ namespace Gameplay.UnityComponents
 
         private void Awake()
         {
-            Destroy(gameObject, 5f);
+            Destroy(gameObject, 3f);
         }
     }
 }
