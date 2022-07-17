@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using DG.Tweening;
+using Gameplay.Components.Camera;
 using Gameplay.Components.Enemy;
 using Gameplay.Components.Player;
 using Gameplay.Components.Share;
@@ -60,6 +61,7 @@ namespace Gameplay.Systems.Enemy.Attack
                         {
                             ref var hpComponent = ref _playerFilter.Get3(p);
                             hpComponent.Hp -= statsConfig.Damage;
+                            _world.NewEntity().Get<CameraShakeComponent>();
                         }
                     });
 

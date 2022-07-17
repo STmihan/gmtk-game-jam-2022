@@ -14,7 +14,6 @@ namespace UI
         [HideInInspector] public int MaxHp;
         [HideInInspector] public int Hp;
         [HideInInspector] public int CurrentDice;
-
         [SerializeField] private TMP_Text _fire;
         [SerializeField] private TMP_Text _light;
         [SerializeField] private TMP_Text _dark;
@@ -27,6 +26,7 @@ namespace UI
         [SerializeField] private Sprite _lightDiceImage;
         [SerializeField] private Sprite _darkDiceImage;
         [SerializeField] private Sprite _earthDiceImage;
+        [Space] public CanvasGroup DeadScreen;
         
 
         private void Update()

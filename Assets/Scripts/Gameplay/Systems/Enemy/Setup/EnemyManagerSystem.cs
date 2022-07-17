@@ -66,8 +66,8 @@ namespace Gameplay.Systems.Enemy.Setup
                 }
 
                 Type firstOrDefault = rules.Where(t => percent < t.Key).Select(t => t.Value).FirstOrDefault();
-                // return firstOrDefault ?? typeof(RangedProjectileEnemy);
-                return typeof(BigMeleeEnemy);
+                return firstOrDefault ?? typeof(RangedProjectileEnemy);
+                // return typeof(BigMeleeEnemy);
             }
 
             return typeof(RangedProjectileEnemy);

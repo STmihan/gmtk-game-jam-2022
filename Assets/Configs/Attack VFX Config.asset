@@ -24,6 +24,7 @@ MonoBehaviour:
     - {fileID: 1598510078412016403, guid: 9169d5bbb6196cd45a4fb5b252c4ea97, type: 3}
     - {fileID: 5269856507281119683, guid: a5f8e460abefae04091c7175b67f01f2, type: 3}
     - {fileID: 4070849223248650287, guid: 328c7d7585cf4544e95edb16fd4fd69c, type: 3}
+    - {fileID: -7856862592207580896, guid: f2fe08f4811e5bd419616f482c716a38, type: 3}
     - {fileID: -8056331375218627505, guid: f5547c89a031c2948a83b27ee0ae9ff3, type: 3}
     - {fileID: 3593515385178816457, guid: 7cb56b1e84bf342429247739f2973b5e, type: 3}
     - {fileID: -4887663525309678185, guid: c11bd6760b2c54240916081c4f2b9264, type: 3}
@@ -87,7 +88,7 @@ MonoBehaviour:
       Data: 5
     - Name: ChainCount
       Entry: 3
-      Data: 4
+      Data: 8
     - Name: Damage
       Entry: 3
       Data: 4
@@ -105,7 +106,7 @@ MonoBehaviour:
       Data: 7
     - Name: ExplosionVFX
       Entry: 10
-      Data: 1
+      Data: 8
     - Name: Radius
       Entry: 4
       Data: 15
@@ -114,7 +115,7 @@ MonoBehaviour:
       Data: 1.5
     - Name: Damage
       Entry: 3
-      Data: 8
+      Data: 14
     - Name: 
       Entry: 8
       Data: 
@@ -123,13 +124,13 @@ MonoBehaviour:
       Data: 4|Gameplay.Configs.Attacks.PlayerBrownAttack, Assembly-CSharp
     - Name: ProjectilePrefab
       Entry: 10
-      Data: 8
+      Data: 9
     - Name: HitVFX
       Entry: 10
-      Data: 9
+      Data: 10
     - Name: TopVFX
       Entry: 10
-      Data: 10
+      Data: 11
     - Name: Damage
       Entry: 3
       Data: 12
@@ -147,10 +148,10 @@ MonoBehaviour:
       Data: 5|Gameplay.Configs.Attacks.PlayerWhiteAttack, Assembly-CSharp
     - Name: ProjectilePrefab
       Entry: 10
-      Data: 11
+      Data: 12
     - Name: HitVFX
       Entry: 10
-      Data: 12
+      Data: 13
     - Name: Damage
       Entry: 3
       Data: 5
@@ -162,10 +163,10 @@ MonoBehaviour:
       Data: 6|Gameplay.Configs.Attacks.EnemyBlueAttack, Assembly-CSharp
     - Name: ProjectilePrefab
       Entry: 10
-      Data: 13
+      Data: 14
     - Name: HitVFX
       Entry: 10
-      Data: 14
+      Data: 15
     - Name: 
       Entry: 8
       Data: 
@@ -177,10 +178,10 @@ MonoBehaviour:
       Data: 
     - Name: ChargeVfx
       Entry: 10
-      Data: 15
+      Data: 16
     - Name: HitVFX
       Entry: 10
-      Data: 16
+      Data: 17
     - Name: 
       Entry: 8
       Data: 
@@ -192,10 +193,10 @@ MonoBehaviour:
       Data: 
     - Name: ExplosionVFX
       Entry: 10
-      Data: 17
+      Data: 18
     - Name: CircleVFX
       Entry: 10
-      Data: 18
+      Data: 19
     - Name: 
       Entry: 8
       Data: 
@@ -207,7 +208,7 @@ MonoBehaviour:
       Data: 
     - Name: TrailVFX
       Entry: 10
-      Data: 19
+      Data: 20
     - Name: 
       Entry: 8
       Data: 
@@ -219,16 +220,16 @@ MonoBehaviour:
       Data: 
     - Name: BottomVfx
       Entry: 10
-      Data: 20
+      Data: 21
     - Name: TopVFX
       Entry: 10
-      Data: 21
+      Data: 22
     - Name: HitVFX
       Entry: 10
-      Data: 22
+      Data: 23
     - Name: ShootVFX
       Entry: 10
-      Data: 23
+      Data: 24
     - Name: 
       Entry: 8
       Data: 
