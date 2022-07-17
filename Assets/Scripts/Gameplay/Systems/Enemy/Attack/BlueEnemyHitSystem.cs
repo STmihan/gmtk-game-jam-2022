@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Gameplay.Components.Camera;
 using Gameplay.Components.Enemy;
 using Gameplay.Components.Player;
 using Gameplay.Components.Share;
@@ -18,6 +19,7 @@ namespace Gameplay.Systems.Enemy.Attack
         private EcsFilter<PlayerTag, CharacterViewComponent, HpComponent> _playerFilter;
         private AttackConfig _config;
         private EnemyStatsConfig _statsConfig;
+        private EcsWorld _world;
         
         public void Run()
         {
@@ -33,6 +35,7 @@ namespace Gameplay.Systems.Enemy.Attack
                 Object.Instantiate(vfxPrefab, hit.Position, Quaternion.identity);
                 ref var hpComponent = ref _playerFilter.Get3(i);
                 hpComponent.Hp -= statsConfig.Damage;
+                _world.NewEntity().Get<CameraShakeComponent>();
                 _filter.GetEntity(i).Del<HitEvent>();
             }
         }

@@ -1,3 +1,4 @@
+using Cinemachine;
 using Gameplay.Components;
 using Gameplay.Components.Enemy;
 using Gameplay.Components.Player;
@@ -66,6 +67,7 @@ namespace Gameplay
                 .AddEnemySystems()
                 .Add(new CameraSetupSystem())
                 .Add(new UIProviderSystem())
+                .Add(new CameraShakeSystem())
                 .OneFrame<HitEvent>()
                 .OneFrame<AttackEvent>()
                 .Inject(_playerConfig)
@@ -75,6 +77,7 @@ namespace Gameplay
                 .Inject(_attackConfig)
                 .Inject(_tilesConfig)
                 .Inject(_gameplayUIProvider)
+                .Inject(FindObjectOfType<CinemachineVirtualCamera>())
                 .Init();
         }
 

@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using DG.Tweening;
+using Gameplay.Components.Camera;
 using Gameplay.Components.Enemy;
 using Gameplay.Components.Player;
 using Gameplay.Components.Share;
@@ -20,6 +21,7 @@ namespace Gameplay.Systems.Enemy.Attack
         private EcsFilter<PlayerTag, HpComponent> _playerFilter;
         private AttackConfig _attackConfig;
         private EnemyStatsConfig _statsConfig;
+        private EcsWorld _world;
 
         public void Run()
         {
@@ -52,6 +54,7 @@ namespace Gameplay.Systems.Enemy.Attack
                     {
                         ref var hpComponent = ref _playerFilter.Get2(p);
                         hpComponent.Hp -= statsConfig.Damage;
+                        _world.NewEntity().Get<CameraShakeComponent>();
                     }
                 }
                 Object.Destroy(view.gameObject);

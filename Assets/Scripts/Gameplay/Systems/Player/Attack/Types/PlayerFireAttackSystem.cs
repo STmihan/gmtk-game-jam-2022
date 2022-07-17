@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using DG.Tweening;
+using Gameplay.Components.Camera;
 using Gameplay.Components.Enemy;
 using Gameplay.Components.Share;
 using Gameplay.Components.Share.Attack;
@@ -16,7 +17,8 @@ namespace Gameplay.Systems.Player.Attack.Types
         private EcsFilter<HitEvent> _filter;
         private EcsFilter<EnemyTag, CharacterViewComponent, HpComponent> _enemiesFilter;
         private AttackConfig _config;
-        
+        private EcsWorld _world;
+
         public void Run()
         {
             foreach (var i in _filter)
@@ -35,8 +37,8 @@ namespace Gameplay.Systems.Player.Attack.Types
                 sequence.Join(circleVfx.transform.DOScaleZ(config.Radius, .4f));
                          
                 Collider[] result = new Collider[20];
-                
-                Physics.OverlapSphereNonAlloc(hit.Position, config.Radius, result, LayerMask.GetMask("Enemies"));
+
+                int alloc = Physics.OverlapSphereNonAlloc(hit.Position, config.Radius, result, LayerMask.GetMask("Enemies"));
                 foreach (var collider in result)
                 {
                     if (collider == null) continue;
@@ -45,6 +47,10 @@ namespace Gameplay.Systems.Player.Attack.Types
                         var enemyEntity = GetEnemyByTransform(view.transform);
                         ref var hpComponent = ref enemyEntity.Get<HpComponent>();
                         hpComponent.Hp -= config.Damage;
+                        if (alloc > 3)
+                        {
+                            _world.NewEntity().Get<CameraShakeComponent>();
+                        }
                         Object.Instantiate(config.ExplosionVFX, view.transform.position, Quaternion.identity);
                     }
                 }
