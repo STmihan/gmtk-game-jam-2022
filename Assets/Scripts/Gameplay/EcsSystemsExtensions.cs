@@ -28,7 +28,8 @@ namespace Gameplay
                          .Add(new BlueEnemyHitSystem())
                          .Add(new DarkEnemyAttackSystem())
                          .Add(new FireSuicideEnemyAttackSystem())
-                         .Add(new FireChargeEnemyAttackSystem());
+                         .Add(new FireChargeEnemyAttackSystem())
+                         .Add(new BrownEnemyAttackSystem());
         }
         
         public static EcsSystems AddPlayerSystems(this EcsSystems system)
