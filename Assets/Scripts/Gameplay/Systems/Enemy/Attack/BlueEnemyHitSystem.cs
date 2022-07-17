@@ -9,6 +9,7 @@ using Gameplay.Configs.Attacks;
 using Gameplay.Configs.Enemies;
 using Gameplay.Configs.Enemies.Stats;
 using Leopotam.Ecs;
+using Music;
 using UnityEngine;
 
 namespace Gameplay.Systems.Enemy.Attack
@@ -35,6 +36,7 @@ namespace Gameplay.Systems.Enemy.Attack
                 Object.Instantiate(vfxPrefab, hit.Position, Quaternion.identity);
                 ref var hpComponent = ref _playerFilter.Get3(i);
                 hpComponent.Hp -= statsConfig.Damage;
+                SoundController.Play(config.HitSound);
                 _world.NewEntity().Get<CameraShakeComponent>();
                 _filter.GetEntity(i).Del<HitEvent>();
             }

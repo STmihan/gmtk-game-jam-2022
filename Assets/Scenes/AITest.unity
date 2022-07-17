@@ -1515,6 +1515,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1763254874 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2517181479929946250, guid: 312cc0cd950f37d4290d6cbbecb65717,
+    type: 3}
+  m_PrefabInstance: {fileID: 1763254871}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1763254875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763254874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 1015
 --- !u!114 &1878234896 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1919018950756600225, guid: 140b09158fca64e40a50155d16fd226e,
@@ -1578,6 +1601,7 @@ MonoBehaviour:
   _lightDiceImage: {fileID: 21300000, guid: d113e8ce76d404b47be68e3e3a81405d, type: 3}
   _darkDiceImage: {fileID: 21300000, guid: bae5bcf8f58b41f4d9f69c2f21c69187, type: 3}
   _earthDiceImage: {fileID: 21300000, guid: 0a81cf3781214dd42a8ff17e23d0121f, type: 3}
+  DeadScreen: {fileID: 0}
 --- !u!114 &2018611887
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ using Gameplay.Components.Share.Attack;
 using Gameplay.Configs.Attacks;
 using Gameplay.UnityComponents;
 using Leopotam.Ecs;
+using Music;
 using UnityEngine;
 
 namespace Gameplay.Systems.Player.Attack.Types
@@ -50,6 +51,7 @@ namespace Gameplay.Systems.Player.Attack.Types
                             ref var hpComponent = ref enemyEntity.Get<HpComponent>();
                             hpComponent.Hp -= config.Damage;
                             _world.NewEntity().Get<CameraShakeComponent>();
+                            SoundController.Play(config.HitSound);
                         }
                     }
                 });

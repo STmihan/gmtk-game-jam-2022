@@ -5,6 +5,7 @@ using Gameplay.Components.Share.Attack;
 using Gameplay.Configs;
 using Gameplay.Configs.Attacks;
 using Leopotam.Ecs;
+using Music;
 using UnityEngine;
 
 namespace Gameplay.Systems.Player.Attack
@@ -48,6 +49,7 @@ namespace Gameplay.Systems.Player.Attack
                 characterView.Animator.SetFloat("AttackSpeed", 1/0.2f);
                 DOTween.Sequence().AppendInterval(0.2f).OnComplete(() =>
                 {
+                    SoundController.Play(config.ThrowSound);
                     var entity = _world.NewEntity();
                     var firePoint = characterView.FirePoint;
                     var direction = firePoint.forward;

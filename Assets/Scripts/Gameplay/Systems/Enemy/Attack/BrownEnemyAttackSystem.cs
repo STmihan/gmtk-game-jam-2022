@@ -10,6 +10,7 @@ using Gameplay.Configs.Enemies;
 using Gameplay.Configs.Enemies.Stats;
 using Gameplay.UnityComponents;
 using Leopotam.Ecs;
+using Music;
 using UnityEngine;
 
 namespace Gameplay.Systems.Enemy.Attack
@@ -44,6 +45,7 @@ namespace Gameplay.Systems.Enemy.Attack
                 sequence.AppendCallback(() => { entity.Get<IsAttackingTimer>().Time = 0.4f; });
                 sequence.AppendInterval(0.4f).OnComplete(() =>
                 {
+                    SoundController.Play(config.ThrowSound);
                     var shootVfx = Object.Instantiate(config.ShootVFX, hitPoint, view.FirePoint.rotation);
                     shootVfx.transform.Rotate(shootVfx.transform.right, -90f);
                     shootVfx.transform.SetParent(view.FirePoint);
@@ -68,7 +70,7 @@ namespace Gameplay.Systems.Enemy.Attack
                         Object.Destroy(bottomVfx.gameObject);
                         Object.Destroy(topVfx.gameObject);
                         Object.Destroy(Object.Instantiate(config.HitVFX, playerPos, Quaternion.identity), .7f);
-                        Hit(hitPoint, statsConfig, ref _playerFilter.Get3(p));
+                        Hit(hitPoint, statsConfig, ref _playerFilter.Get3(p), config);
                     });
                 });
 
@@ -79,13 +81,14 @@ namespace Gameplay.Systems.Enemy.Attack
             }
         }
 
-        private void Hit(Vector3 hitPoint, RangedAoeEnemy statsConfig, ref HpComponent hpComponent)
+        private void Hit(Vector3 hitPoint, RangedAoeEnemy statsConfig, ref HpComponent hpComponent, EnemyBrownAttack config)
         {
             var result = new Collider[2];
             Physics.OverlapSphereNonAlloc(hitPoint, statsConfig.AoeRadius, result,
                 LayerMask.GetMask("Player"));
             foreach (var collider in result)
             {
+                SoundController.Play(config.HitSound);
                 if (collider == null) continue;
                 hpComponent.Hp -= statsConfig.Damage;
                 _world.NewEntity().Get<CameraShakeComponent>();

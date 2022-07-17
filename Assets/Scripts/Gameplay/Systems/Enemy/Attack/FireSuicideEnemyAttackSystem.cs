@@ -10,6 +10,7 @@ using Gameplay.Configs.Enemies;
 using Gameplay.Configs.Enemies.Stats;
 using Gameplay.UnityComponents;
 using Leopotam.Ecs;
+using Music;
 using UnityEngine;
 
 namespace Gameplay.Systems.Enemy.Attack
@@ -57,6 +58,7 @@ namespace Gameplay.Systems.Enemy.Attack
                         _world.NewEntity().Get<CameraShakeComponent>();
                     }
                 }
+                SoundController.Play(config.HitSound);
                 Object.Destroy(view.gameObject);
                 _filter.GetEntity(i).Destroy();
             }
