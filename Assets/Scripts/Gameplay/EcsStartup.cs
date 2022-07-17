@@ -17,6 +17,7 @@ using Gameplay.Systems.Share;
 using Gameplay.Systems.Tile;
 using Leopotam.Ecs;
 using Sirenix.OdinInspector;
+using UI;
 using UnityEngine;
 using Voody.UniLeo;
 
@@ -34,6 +35,9 @@ namespace Gameplay
         private AttackConfig _attackConfig;
         [SerializeField]
         private TilesConfig _tilesConfig;
+
+        [SerializeField] 
+        private GameplayUIProvider _gameplayUIProvider;
         
         private EcsWorld _world;
         private EcsSystems _systems;
@@ -61,6 +65,7 @@ namespace Gameplay
                 .AddPlayerSystems()
                 .AddEnemySystems()
                 .Add(new CameraSetupSystem())
+                .Add(new UIProviderSystem())
                 .OneFrame<HitEvent>()
                 .OneFrame<AttackEvent>()
                 .OneFrame<OnEnemyDieEvent>()
@@ -70,6 +75,7 @@ namespace Gameplay
                 .Inject(_camera)
                 .Inject(_attackConfig)
                 .Inject(_tilesConfig)
+                .Inject(_gameplayUIProvider)
                 .Init();
         }
 
