@@ -13,5 +13,6 @@ namespace Gameplay.Configs.Attacks
         public VFXView TopVFX;
         [PreviewField]
         public VFXView HitVFX;
+        public VFXView ShootVFX;
     }
 }
