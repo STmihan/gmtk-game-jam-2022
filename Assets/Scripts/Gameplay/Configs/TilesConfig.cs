@@ -3,9 +3,9 @@ using UnityEngine;
 
 namespace Gameplay.Configs
 {
+    [CreateAssetMenu]
     public class TilesConfig : ScriptableObject
     {
-        public int MaxTilesRender;
         public TileView[] Tiles;
     }
 }
