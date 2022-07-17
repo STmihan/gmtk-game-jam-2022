@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Sprites/Ui/BottomBrown.prefab.meta
+guid: b600cc053a88d234da9cbfdd53c0b3c0
+=======
 guid: 7dc994e885826b6429e582df7bc0d4cf
+>>>>>>> b48fde2 (Adding gameplay ui and pause ui):Assets/Prefabs/VFX/Player/Brown/BottomBrown.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 

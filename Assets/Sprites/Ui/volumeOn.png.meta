@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 49c2ba3f827d15449997916faf593878
+=======
+guid: 5dcc962eaff1b2643b5e6ae9794183b0
+>>>>>>> b48fde2 (Adding gameplay ui and pause ui)
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
