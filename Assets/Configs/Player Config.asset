@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5136caa21be4f25bb4479888fdd5148, type: 3}
+  m_Name: Player Config
+  m_EditorClassIdentifier: 
+  PlayerPrefab: {fileID: 3872057581039948996, guid: 509db8c875e0ee64caee93df8f40a30f,
+    type: 3}
+  PlayerMaxHp: 40
+  PlayerMovementSpeed: 8
+  PlayerRotationDuration: 0.2
+  PlayerAttackDelay: 1
+  PlayerProjectileSpeed: 200
