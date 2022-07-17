@@ -2,7 +2,7 @@
 {
     public struct HpComponent
     {
-        public float MaxHp;
-        public float Hp;
+        public int MaxHp;
+        public int Hp;
     }
 }
