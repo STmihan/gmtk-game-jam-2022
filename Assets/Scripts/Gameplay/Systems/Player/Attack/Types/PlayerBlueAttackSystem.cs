@@ -33,10 +33,10 @@ namespace Gameplay.Systems.Player.Attack.Types
                 {
                     var chains = GetChain(target, chainCount);
                     var sequence = DOTween.Sequence();
-                    var view = Object.Instantiate(trail, hit.Position, Quaternion.identity);
+                    var trailView = Object.Instantiate(trail, hit.Position, Quaternion.identity);
                     foreach (var chain in chains)
                     {
-                        sequence.Append(view.transform.DOMove(chain.position, 0.1f).OnComplete(() =>
+                        sequence.Append(trailView.transform.DOMove(chain.position, 0.1f).OnComplete(() =>
                         {
                             Object.Instantiate(explosion, chain.position, Quaternion.identity);
                             var enemyEntity = GetEnemyByTransform(chain);
@@ -44,6 +44,11 @@ namespace Gameplay.Systems.Player.Attack.Types
                             hpComponent.Hp -= config.Damage;
                         }));
                     }
+
+                    sequence.OnComplete(() =>
+                    {
+                        Object.Destroy(trailView.gameObject);
+                    });
                 }
 
                 _firestHitFilter.GetEntity(i).Del<HitEvent>();

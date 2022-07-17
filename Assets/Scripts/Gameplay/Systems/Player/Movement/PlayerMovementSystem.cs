@@ -9,6 +9,7 @@ namespace Gameplay.Systems.Player.Movement
     public class PlayerMovementSystem : IEcsRunSystem
     {
         private EcsFilter<PlayerTag, MovementComponent, CharacterViewComponent> _filter;
+        private static readonly int IsMoving = Animator.StringToHash("IsMoving");
 
         public void Run()
         {
@@ -16,7 +17,13 @@ namespace Gameplay.Systems.Player.Movement
             {
                 ref var movementComponent = ref _filter.Get2(i);
                 ref var characterControllerComponent = ref _filter.Get3(i);
-
+                characterControllerComponent
+                    .View
+                    .Animator
+                    .SetBool(
+                        IsMoving,
+                        movementComponent.Direction != Vector3.zero);
+                
                 characterControllerComponent
                     .View
                     .CharacterController

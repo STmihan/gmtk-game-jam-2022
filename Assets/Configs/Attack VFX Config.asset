@@ -108,10 +108,10 @@ MonoBehaviour:
       Data: 1
     - Name: Radius
       Entry: 4
-      Data: 5
+      Data: 15
     - Name: TimeBeforeHit
       Entry: 4
-      Data: 1
+      Data: 1.5
     - Name: Damage
       Entry: 3
       Data: 8

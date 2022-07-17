@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8399871441021454909}
   - component: {fileID: 3202563019417107075}
   - component: {fileID: 4749149379037412752}
+  - component: {fileID: 3970005799877040309}
   m_Layer: 9
   m_Name: o_bush-big-dead (10)
   m_TagString: Untagged
@@ -83,6 +84,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3970005799877040309
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699073815131176755}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5100276, y: 0.52773833, z: 0.33807027}
+  m_Center: {x: 0.0033773023, y: -0.002852845, z: 0.16802348}
 --- !u!1 &727446245377735819
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +108,7 @@ GameObject:
   - component: {fileID: 4281654919333089325}
   - component: {fileID: 914851366311234369}
   - component: {fileID: 1710051819928948659}
+  - component: {fileID: 5328370152736535110}
   m_Layer: 9
   m_Name: o_bush-big-dead (18)
   m_TagString: Untagged
@@ -166,6 +181,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5328370152736535110
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727446245377735819}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5100276, y: 0.52773833, z: 0.33807027}
+  m_Center: {x: 0.0033768255, y: -0.002852845, z: 0.16802348}
 --- !u!1 &796264190511798319
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,6 +205,7 @@ GameObject:
   - component: {fileID: 8180357024581448238}
   - component: {fileID: 3953276460226870698}
   - component: {fileID: 343072563328866585}
+  - component: {fileID: 7376432256159572225}
   m_Layer: 9
   m_Name: o_bush-big-dead (20)
   m_TagString: Untagged
@@ -249,6 +278,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7376432256159572225
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796264190511798319}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5100276, y: 0.52773833, z: 0.33807027}
+  m_Center: {x: 0.0033768255, y: -0.0028529046, z: 0.16802348}
 --- !u!1 &966560145116881932
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,6 +302,7 @@ GameObject:
   - component: {fileID: 378283415892254467}
   - component: {fileID: 8560414402078680282}
   - component: {fileID: 6069196630990882413}
+  - component: {fileID: 8742212991394153111}
   m_Layer: 9
   m_Name: o_bush-big-dead (5)
   m_TagString: Untagged
@@ -332,6 +375,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8742212991394153111
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966560145116881932}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5100276, y: 0.52773833, z: 0.33807027}
+  m_Center: {x: 0.003376794, y: -0.0028528394, z: 0.16802348}
 --- !u!1 &1252248018927640806
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,6 +399,7 @@ GameObject:
   - component: {fileID: 6081324347790246708}
   - component: {fileID: 4578403370060042204}
   - component: {fileID: 8348439243685957998}
+  - component: {fileID: 8355332170466321738}
   m_Layer: 9
   m_Name: o_bush-big-dead (14)
   m_TagString: Untagged
@@ -415,6 +472,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8355332170466321738
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252248018927640806}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5100276, y: 0.52773833, z: 0.33807027}
+  m_Center: {x: 0.0033768255, y: -0.002852845, z: 0.16802348}
 --- !u!1 &1716592149774152658
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,6 +496,7 @@ GameObject:
   - component: {fileID: 2072947245323786845}
   - component: {fileID: 6921056713627351577}
   - component: {fileID: 6836350488816387576}
+  - component: {fileID: 4070453537020065731}
   m_Layer: 9
   m_Name: o_bush-big-dead (9)
   m_TagString: Untagged
@@ -498,6 +569,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4070453537020065731
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716592149774152658}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5100276, y: 0.52773833, z: 0.33807027}
+  m_Center: {x: 0.0033768255, y: -0.002852845, z: 0.16802348}
 --- !u!1 &1750081467307250938
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,6 +593,7 @@ GameObject:
   - component: {fileID: 8740656041450277080}
   - component: {fileID: 4816341156501874791}
   - component: {fileID: 1719736357920289776}
+  - component: {fileID: 6951951588989142720}
   m_Layer: 9
   m_Name: o_bush-big-dead (11)
   m_TagString: Untagged
@@ -581,6 +666,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6951951588989142720
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750081467307250938}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5100276, y: 0.52773833, z: 0.33807027}
+  m_Center: {x: 0.0033768255, y: -0.002852845, z: 0.16802348}
 --- !u!1 &1993963578218262491
 GameObject:
   m_ObjectHideFlags: 0
@@ -592,6 +690,7 @@ GameObject:
   - component: {fileID: 5783406467609161139}
   - component: {fileID: 1855365185837128405}
   - component: {fileID: 2898699713921636169}
+  - component: {fileID: 6356259927345647047}
   m_Layer: 9
   m_Name: o_bush-big-dead (24)
   m_TagString: Untagged
@@ -664,6 +763,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6356259927345647047
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993963578218262491}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5100276, y: 0.52773833, z: 0.33807027}
+  m_Center: {x: 0.0033768255, y: -0.002852845, z: 0.16802348}
 --- !u!1 &2041891810634194716
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,6 +787,7 @@ GameObject:
   - component: {fileID: 3134256711790444758}
   - component: {fileID: 4274210420136934002}
   - component: {fileID: 7514969809478767894}
+  - component: {fileID: 1785838091058507588}
   m_Layer: 9
   m_Name: o_bush-big-dead (2)
   m_TagString: Untagged
@@ -747,6 +860,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1785838091058507588
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041891810634194716}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5100273, y: 0.5277382, z: 0.33807012}
+  m_Center: {x: 0.0033768117, y: -0.002852813, z: 0.16802348}
 --- !u!1 &2167510813608545951
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,6 +884,7 @@ GameObject:
   - component: {fileID: 418818568036394167}
   - component: {fileID: 9212033636728590042}
   - component: {fileID: 8797740410920225187}
+  - component: {fileID: 8468949297984125593}
   m_Layer: 9
   m_Name: o_bush-big-dead (8)
   m_TagString: Untagged
@@ -830,6 +957,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8468949297984125593
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167510813608545951}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.51002765, y: 0.5277384, z: 0.33807027}
+  m_Center: {x: 0.0033768057, y: -0.0028528518, z: 0.16802348}
 --- !u!1 &2433649766812227212
 GameObject:
   m_ObjectHideFlags: 0
@@ -903,6 +1043,7 @@ GameObject:
   - component: {fileID: 7739682586096081515}
   - component: {fileID: 7927560008255827114}
   - component: {fileID: 9180759370806663749}
+  - component: {fileID: 3230112145805533498}
   m_Layer: 9
   m_Name: o_bush-big-dead (27)
   m_TagString: Untagged
@@ -975,6 +1116,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3230112145805533498
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2558033577215205142}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5100276, y: 0.52773833, z: 0.33807027}
+  m_Center: {x: 0.0033768255, y: -0.002852845, z: 0.16802348}
 --- !u!1 &2860611708451296322
 GameObject:
   m_ObjectHideFlags: 0
@@ -986,6 +1140,7 @@ GameObject:
   - component: {fileID: 8932913661851860098}
   - component: {fileID: 2815385462899892365}
   - component: {fileID: 5664409765355843094}
+  - component: {fileID: 5848456514561378593}
   m_Layer: 9
   m_Name: o_bush-big-dead (26)
   m_TagString: Untagged
@@ -1058,6 +1213,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5848456514561378593
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2860611708451296322}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5100276, y: 0.52773833, z: 0.33807027}
+  m_Center: {x: 0.0033768255, y: -0.002852845, z: 0.16802348}
 --- !u!1 &3083816273317200079
 GameObject:
   m_ObjectHideFlags: 0
@@ -1069,6 +1237,7 @@ GameObject:
   - component: {fileID: 3222128224359609487}
   - component: {fileID: 8745934223982902233}
   - component: {fileID: 4720037062090147536}
+  - component: {fileID: 6149787759110927390}
   m_Layer: 9
   m_Name: o_bush-small-dead
   m_TagString: Untagged
@@ -1141,6 +1310,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6149787759110927390
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3083816273317200079}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4531245, y: 0.43558958, z: 0.22959292}
+  m_Center: {x: 0.006559446, y: 0.023128571, z: 0.114708304}
 --- !u!1 &3320245109093649981
 GameObject:
   m_ObjectHideFlags: 0
@@ -1152,6 +1334,7 @@ GameObject:
   - component: {fileID: 4467967425478996757}
   - component: {fileID: 5627649052158288807}
   - component: {fileID: 2847635791891100628}
+  - component: {fileID: 2385593596000667993}
   m_Layer: 9
   m_Name: o_bush-big-dead (13)
   m_TagString: Untagged
@@ -1224,6 +1407,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2385593596000667993
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3320245109093649981}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5100276, y: 0.52773833, z: 0.33807027}
+  m_Center: {x: 0.0033768255, y: -0.002852845, z: 0.16802348}
 --- !u!1 &3778638733174744452
 GameObject:
   m_ObjectHideFlags: 0
@@ -1235,6 +1431,7 @@ GameObject:
   - component: {fileID: 5111387002933573095}
   - component: {fileID: 7818084338831374278}
   - component: {fileID: 8943718687244219115}
+  - component: {fileID: 3678750581542326508}
   m_Layer: 9
   m_Name: o_bush-big-dead (19)
   m_TagString: Untagged
@@ -1307,6 +1504,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3678750581542326508
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3778638733174744452}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5100276, y: 0.52773833, z: 0.33807027}
+  m_Center: {x: 0.0033767063, y: -0.002852845, z: 0.16802348}
 --- !u!1 &4029571090632912876
 GameObject:
   m_ObjectHideFlags: 0
@@ -1318,6 +1528,7 @@ GameObject:
   - component: {fileID: 6239161509654820658}
   - component: {fileID: 5732182707108785951}
   - component: {fileID: 4977985667189956193}
+  - component: {fileID: 7322545792739406550}
   m_Layer: 9
   m_Name: o_bush-big-dead (16)
   m_TagString: Untagged
@@ -1390,6 +1601,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7322545792739406550
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4029571090632912876}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5100276, y: 0.52773833, z: 0.33807027}
+  m_Center: {x: 0.003376587, y: -0.002852845, z: 0.16802348}
 --- !u!1 &4841280235036172411
 GameObject:
   m_ObjectHideFlags: 0
@@ -1401,6 +1625,7 @@ GameObject:
   - component: {fileID: 4734230014535807869}
   - component: {fileID: 4864450609309470909}
   - component: {fileID: 4058361737217512403}
+  - component: {fileID: 112837074350909537}
   m_Layer: 9
   m_Name: o_bush-big-dead (25)
   m_TagString: Untagged
@@ -1473,6 +1698,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &112837074350909537
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4841280235036172411}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5100276, y: 0.52773833, z: 0.33807027}
+  m_Center: {x: 0.0033768255, y: -0.002852845, z: 0.16802348}
 --- !u!1 &4849837703281157980
 GameObject:
   m_ObjectHideFlags: 0
@@ -1484,6 +1722,7 @@ GameObject:
   - component: {fileID: 665917326163952564}
   - component: {fileID: 1840121824160474775}
   - component: {fileID: 7567587364498675968}
+  - component: {fileID: 1042188624649888523}
   m_Layer: 9
   m_Name: o_bush-small
   m_TagString: Untagged
@@ -1556,6 +1795,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1042188624649888523
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4849837703281157980}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.63527894, y: 0.67689663, z: 0.17889826}
+  m_Center: {x: -0.038300157, y: -0.0077204723, z: 0.08562539}
 --- !u!1 &4943573361784113318
 GameObject:
   m_ObjectHideFlags: 0
@@ -1567,6 +1819,7 @@ GameObject:
   - component: {fileID: 4646966101300703986}
   - component: {fileID: 8864785000205287875}
   - component: {fileID: 6421426730218118309}
+  - component: {fileID: 8349210763597419135}
   m_Layer: 9
   m_Name: o_bush-small-dead (1)
   m_TagString: Untagged
@@ -1639,6 +1892,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8349210763597419135
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4943573361784113318}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45312455, y: 0.43558955, z: 0.22959292}
+  m_Center: {x: 0.006559447, y: 0.023128571, z: 0.114708304}
 --- !u!1 &5026862158381117265
 GameObject:
   m_ObjectHideFlags: 0
@@ -1650,6 +1916,7 @@ GameObject:
   - component: {fileID: 6781276868108435925}
   - component: {fileID: 2463581934496798663}
   - component: {fileID: 81557759246928449}
+  - component: {fileID: 7313742669721384634}
   m_Layer: 9
   m_Name: o_bush-big-dead (28)
   m_TagString: Untagged
@@ -1722,6 +1989,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7313742669721384634
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5026862158381117265}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5100276, y: 0.52773833, z: 0.33807027}
+  m_Center: {x: 0.0033768255, y: -0.002852845, z: 0.16802348}
 --- !u!1 &5302866839266221573
 GameObject:
   m_ObjectHideFlags: 0
@@ -1795,6 +2075,7 @@ GameObject:
   - component: {fileID: 6844570581889398214}
   - component: {fileID: 3279185509317423544}
   - component: {fileID: 8311408255153288045}
+  - component: {fileID: 3920813646056969657}
   m_Layer: 9
   m_Name: o_bush-big-dead (17)
   m_TagString: Untagged
@@ -1867,6 +2148,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3920813646056969657
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6060867302719154424}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5100276, y: 0.52773833, z: 0.33807027}
+  m_Center: {x: 0.0033768255, y: -0.002852845, z: 0.16802348}
 --- !u!1 &6250217823324897737
 GameObject:
   m_ObjectHideFlags: 0
@@ -1878,6 +2172,7 @@ GameObject:
   - component: {fileID: 2232879617863903612}
   - component: {fileID: 2243166818073807026}
   - component: {fileID: 7781814724807507017}
+  - component: {fileID: 1837660023775297850}
   m_Layer: 9
   m_Name: o_bush-big-dead (23)
   m_TagString: Untagged
@@ -1950,6 +2245,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1837660023775297850
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6250217823324897737}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5100276, y: 0.52773833, z: 0.33807027}
+  m_Center: {x: 0.0033768255, y: -0.002852845, z: 0.16802348}
 --- !u!1 &6603062217873006937
 GameObject:
   m_ObjectHideFlags: 0
@@ -1961,6 +2269,7 @@ GameObject:
   - component: {fileID: 4386734610121907645}
   - component: {fileID: 2091270818178519082}
   - component: {fileID: 2057728049022756187}
+  - component: {fileID: 7520421986116974269}
   m_Layer: 9
   m_Name: o_bush-big-dead (12)
   m_TagString: Untagged
@@ -2033,6 +2342,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7520421986116974269
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6603062217873006937}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5100276, y: 0.52773833, z: 0.33807027}
+  m_Center: {x: 0.0033768255, y: -0.002852845, z: 0.16802348}
 --- !u!1 &6828401702104502604
 GameObject:
   m_ObjectHideFlags: 0
@@ -2208,6 +2530,7 @@ GameObject:
   - component: {fileID: 6415085795035729341}
   - component: {fileID: 7425038443913438779}
   - component: {fileID: 7190124029304731092}
+  - component: {fileID: 7131917626291025695}
   m_Layer: 9
   m_Name: o_bush-big-dead (4)
   m_TagString: Untagged
@@ -2280,6 +2603,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7131917626291025695
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6899244389148026492}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.51002765, y: 0.5277384, z: 0.33807027}
+  m_Center: {x: 0.0033768057, y: -0.0028528518, z: 0.16802348}
 --- !u!1 &7695714999920945300
 GameObject:
   m_ObjectHideFlags: 0
@@ -2291,6 +2627,7 @@ GameObject:
   - component: {fileID: 458171104566972619}
   - component: {fileID: 2428343454810559339}
   - component: {fileID: 4621487094841869441}
+  - component: {fileID: 6567532235952388681}
   m_Layer: 9
   m_Name: o_bush-big-dead (22)
   m_TagString: Untagged
@@ -2363,6 +2700,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6567532235952388681
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7695714999920945300}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5100276, y: 0.52773833, z: 0.33807027}
+  m_Center: {x: 0.0033768255, y: -0.0028529046, z: 0.16802348}
 --- !u!1 &7863740655774380961
 GameObject:
   m_ObjectHideFlags: 0
@@ -2374,6 +2724,7 @@ GameObject:
   - component: {fileID: 5090195995464967570}
   - component: {fileID: 1440526892953688566}
   - component: {fileID: 5311485629146033688}
+  - component: {fileID: 5353910669369109170}
   m_Layer: 9
   m_Name: o_bush-big-dead (15)
   m_TagString: Untagged
@@ -2446,6 +2797,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5353910669369109170
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7863740655774380961}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5100276, y: 0.52773833, z: 0.33807027}
+  m_Center: {x: 0.0033768255, y: -0.002852845, z: 0.16802348}
 --- !u!1 &7869308489762408257
 GameObject:
   m_ObjectHideFlags: 0
@@ -2457,6 +2821,7 @@ GameObject:
   - component: {fileID: 6531582144723411846}
   - component: {fileID: 1424713289970941702}
   - component: {fileID: 3394847930794877826}
+  - component: {fileID: 5596931655383003654}
   m_Layer: 9
   m_Name: o_bush-big-dead (21)
   m_TagString: Untagged
@@ -2529,6 +2894,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5596931655383003654
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7869308489762408257}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5100276, y: 0.52773833, z: 0.33807027}
+  m_Center: {x: 0.0033768255, y: -0.002852845, z: 0.16802348}
 --- !u!1 &8145674892280402076
 GameObject:
   m_ObjectHideFlags: 0
@@ -2540,6 +2918,7 @@ GameObject:
   - component: {fileID: 752494047413797069}
   - component: {fileID: 5517760651134782189}
   - component: {fileID: 8061058268113232023}
+  - component: {fileID: 81852595953496702}
   m_Layer: 9
   m_Name: o_bush-small (1)
   m_TagString: Untagged
@@ -2612,6 +2991,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &81852595953496702
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8145674892280402076}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.635279, y: 0.6768967, z: 0.17889832}
+  m_Center: {x: -0.038300153, y: -0.007720477, z: 0.08562539}
 --- !u!1 &8240722705577800781
 GameObject:
   m_ObjectHideFlags: 0
@@ -2684,6 +3076,7 @@ GameObject:
   - component: {fileID: 8712001421377928367}
   - component: {fileID: 1018506364310407418}
   - component: {fileID: 2264591742474518007}
+  - component: {fileID: 1280948595999870558}
   m_Layer: 9
   m_Name: o_bush-big-dead (6)
   m_TagString: Untagged
@@ -2756,6 +3149,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1280948595999870558
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8683140468285851637}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5100275, y: 0.5277382, z: 0.33807027}
+  m_Center: {x: 0.003376817, y: -0.0028528522, z: 0.16802348}
 --- !u!1 &8842207293388619801
 GameObject:
   m_ObjectHideFlags: 0
@@ -2767,6 +3173,7 @@ GameObject:
   - component: {fileID: 3610477384110811878}
   - component: {fileID: 7585488208332916908}
   - component: {fileID: 2059951545238168810}
+  - component: {fileID: 2645551921678464542}
   m_Layer: 9
   m_Name: o_bush-small-dead (2)
   m_TagString: Untagged
@@ -2839,6 +3246,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2645551921678464542
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8842207293388619801}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4531245, y: 0.43558958, z: 0.22959298}
+  m_Center: {x: 0.0065594465, y: 0.023128575, z: 0.114708334}
 --- !u!1001 &1129249093801003015
 PrefabInstance:
   m_ObjectHideFlags: 0

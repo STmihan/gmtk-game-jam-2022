@@ -14,6 +14,8 @@ namespace Gameplay.Systems.Enemy.Movement
         private EcsFilter<EnemyTag, MovementComponent, RotationComponent, CharacterViewComponent, InitedTag>
             _enemyFilter;
 
+        private static readonly int IsMoving = Animator.StringToHash("IsMoving");
+
         public void Run()
         {
             foreach (var i in _enemyFilter)
@@ -30,12 +32,14 @@ namespace Gameplay.Systems.Enemy.Movement
                     if (entity.Has<CanAttackTag>())
                         entity.Del<CanAttackTag>();
                     var direction = (movementComponent.Direction - transform.position).normalized;
+                    controller.Animator.SetBool(IsMoving, true);
                     controller
                         .CharacterController
                         .Move(direction * (Time.deltaTime * movementComponent.Speed));
                 }
                 else
                 {
+                    controller.Animator.SetBool(IsMoving, false);
                     if (!entity.Has<ReloadAttackTimer>())
                         entity.Get<CanAttackTag>();
                 }

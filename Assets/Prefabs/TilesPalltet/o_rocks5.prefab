@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 1906407718913482244}
   - component: {fileID: 8121588140615328593}
   - component: {fileID: 1243350402218046811}
-  m_Layer: 0
+  - component: {fileID: 139907327835443517}
+  m_Layer: 9
   m_Name: o_rocks5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &139907327835443517
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4834495259019937894}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8244511, y: 0.61046207, z: 0.31776252}
+  m_Center: {x: 0.11409314, y: 0.12863322, z: 0.041033052}

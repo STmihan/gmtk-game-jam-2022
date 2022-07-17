@@ -37,28 +37,38 @@ namespace Gameplay.Systems.Enemy.Attack
                 var statsConfig = _statsConfig.GetConfigByType<RangedAoeEnemy>(type);
                 var playerPos = _playerFilter.Get2(p).View.transform.position;
                 // Start Animation
-                var shootVfx = Object.Instantiate(config.ShootVFX, hitPoint, view.FirePoint.rotation);
-                shootVfx.transform.Rotate(shootVfx.transform.right, -90f);
-                shootVfx.transform.SetParent(view.FirePoint);
-                Object.Destroy(shootVfx, 1f);
-                var bottomVfx = Object.Instantiate(config.BottomVfx, playerPos, Quaternion.identity);
-                var topVfx = Object.Instantiate(config.TopVFX, new Vector3(playerPos.x + 10, 15, playerPos.z + 10),
-                    Quaternion.identity);
+                view.Animator.SetTrigger("Attack");
+                view.Animator.SetFloat("AttackSpeed", 1 / 0.4f);
                 var sequence = DOTween.Sequence();
-                sequence.Append(Object
-                                .Instantiate(config.TopVFX, hitPoint, Quaternion.identity).transform
-                                .DOMove(hitPoint + view.FirePoint.up * 10, statsConfig.DelayBeforeHit * .3f));
-                sequence.Append(bottomVfx.transform.DOScaleX(statsConfig.AoeRadius, statsConfig.DelayBeforeHit * .7f));
-                sequence.Join(bottomVfx.transform.DOScaleY(1, statsConfig.DelayBeforeHit * .7f));
-                sequence.Join(bottomVfx.transform.DOScaleZ(statsConfig.AoeRadius, statsConfig.DelayBeforeHit * .7f));
-                sequence.Join(topVfx.transform.DOMove(playerPos, statsConfig.DelayBeforeHit * 0.7f));
-                sequence.Join(topVfx.transform.DOScale(Vector3.one * (statsConfig.AoeRadius * 0.9f), statsConfig.DelayBeforeHit * 0.7f));
-                sequence.OnComplete(() =>
+                sequence.AppendCallback(() => { entity.Get<IsAttackingTimer>().Time = 0.4f; });
+                sequence.AppendInterval(0.4f).OnComplete(() =>
                 {
-                    Object.Destroy(bottomVfx.gameObject);
-                    Object.Destroy(topVfx.gameObject);
-                    Object.Destroy(Object.Instantiate(config.HitVFX, playerPos, Quaternion.identity), .7f);
-                    Hit(hitPoint, statsConfig, ref _playerFilter.Get3(p));
+                    var shootVfx = Object.Instantiate(config.ShootVFX, hitPoint, view.FirePoint.rotation);
+                    shootVfx.transform.Rotate(shootVfx.transform.right, -90f);
+                    shootVfx.transform.SetParent(view.FirePoint);
+                    Object.Destroy(shootVfx, 1f);
+                    var bottomVfx = Object.Instantiate(config.BottomVfx, playerPos, Quaternion.identity);
+                    var topVfx = Object.Instantiate(config.TopVFX, new Vector3(playerPos.x + 10, 15, playerPos.z + 10),
+                        Quaternion.identity);
+                    var sequence = DOTween.Sequence();
+                    sequence.Append(Object
+                                    .Instantiate(config.TopVFX, hitPoint, Quaternion.identity).transform
+                                    .DOMove(hitPoint + view.FirePoint.up * 10, statsConfig.DelayBeforeHit * .3f));
+                    sequence.Append(bottomVfx.transform.DOScaleX(statsConfig.AoeRadius,
+                        statsConfig.DelayBeforeHit * .7f));
+                    sequence.Join(bottomVfx.transform.DOScaleY(1, statsConfig.DelayBeforeHit * .7f));
+                    sequence.Join(bottomVfx.transform.DOScaleZ(statsConfig.AoeRadius,
+                        statsConfig.DelayBeforeHit * .7f));
+                    sequence.Join(topVfx.transform.DOMove(playerPos, statsConfig.DelayBeforeHit * 0.7f));
+                    sequence.Join(topVfx.transform.DOScale(Vector3.one * (statsConfig.AoeRadius * 0.9f),
+                        statsConfig.DelayBeforeHit * 0.7f));
+                    sequence.OnComplete(() =>
+                    {
+                        Object.Destroy(bottomVfx.gameObject);
+                        Object.Destroy(topVfx.gameObject);
+                        Object.Destroy(Object.Instantiate(config.HitVFX, playerPos, Quaternion.identity), .7f);
+                        Hit(hitPoint, statsConfig, ref _playerFilter.Get3(p));
+                    });
                 });
 
 

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 984197857060015815}
   - component: {fileID: 1540234985877203895}
   - component: {fileID: 4960976113467127547}
+  - component: {fileID: 4976125644984765358}
   m_Layer: 0
   m_Name: o_house
   m_TagString: Untagged
@@ -83,6 +84,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4976125644984765358
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571501942536981098}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0811177, y: 1.0455439, z: 1.1332526}
+  m_Center: {x: 0.004092939, y: 0.00362573, z: 0.5579369}
 --- !u!1 &2433649766812227212
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,6 +170,7 @@ GameObject:
   - component: {fileID: 3222128224359609487}
   - component: {fileID: 8745934223982902233}
   - component: {fileID: 4720037062090147536}
+  - component: {fileID: 797745854808511517}
   m_Layer: 0
   m_Name: o_bush-small-dead
   m_TagString: Untagged
@@ -228,6 +243,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &797745854808511517
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3083816273317200079}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4531245, y: 0.43558958, z: 0.22959298}
+  m_Center: {x: 0.0065594465, y: 0.023128575, z: 0.114708334}
 --- !u!1 &3526217504211817152
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,6 +267,7 @@ GameObject:
   - component: {fileID: 6857281523136275250}
   - component: {fileID: 1738794091124207912}
   - component: {fileID: 3606131086669922497}
+  - component: {fileID: 9059782709316746392}
   m_Layer: 0
   m_Name: o_small-tower
   m_TagString: Untagged
@@ -311,6 +340,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &9059782709316746392
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3526217504211817152}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4463336, y: 1.4305158, z: 3.1767259}
+  m_Center: {x: 0.05217216, y: 0.07979908, z: 1.5463729}
 --- !u!1 &3678701916642087686
 GameObject:
   m_ObjectHideFlags: 0
@@ -322,6 +364,7 @@ GameObject:
   - component: {fileID: 3331933606792371626}
   - component: {fileID: 3507381633107507833}
   - component: {fileID: 8928824876966593898}
+  - component: {fileID: 2790214576703389042}
   m_Layer: 0
   m_Name: o_rocks3
   m_TagString: Untagged
@@ -394,6 +437,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2790214576703389042
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3678701916642087686}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.019171, y: 0.7726292, z: 0.5556226}
+  m_Center: {x: 0.00000008940697, y: 0.000000044703494, z: 0.050987337}
 --- !u!1 &4252720418681541919
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,6 +461,7 @@ GameObject:
   - component: {fileID: 9055313010717222093}
   - component: {fileID: 4109043174723640375}
   - component: {fileID: 6818450621963545684}
+  - component: {fileID: 5314853698955531358}
   m_Layer: 0
   m_Name: o_rocks1
   m_TagString: Untagged
@@ -477,6 +534,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5314853698955531358
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4252720418681541919}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5688882, y: 2.613445, z: 0.9305599}
+  m_Center: {x: 0.0126232505, y: 0.37701526, z: 0.31624457}
 --- !u!1 &4849837703281157980
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,6 +558,7 @@ GameObject:
   - component: {fileID: 665917326163952564}
   - component: {fileID: 1840121824160474775}
   - component: {fileID: 7567587364498675968}
+  - component: {fileID: 5645937149506438020}
   m_Layer: 0
   m_Name: o_bush-small
   m_TagString: Untagged
@@ -560,6 +631,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5645937149506438020
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4849837703281157980}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.63527894, y: 0.67689663, z: 0.17889826}
+  m_Center: {x: -0.038300157, y: -0.0077204723, z: 0.08562539}
 --- !u!1 &4948869495057932569
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,6 +655,7 @@ GameObject:
   - component: {fileID: 5686667354137585076}
   - component: {fileID: 6206955241028174020}
   - component: {fileID: 548144021706038664}
+  - component: {fileID: 1241858355807663003}
   m_Layer: 0
   m_Name: o_house
   m_TagString: Untagged
@@ -643,6 +728,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1241858355807663003
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4948869495057932569}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0811177, y: 1.0455437, z: 1.1332524}
+  m_Center: {x: 0.004092927, y: 0.0036257221, z: 0.5579368}
 --- !u!1 &5255068853144944712
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,6 +752,7 @@ GameObject:
   - component: {fileID: 8415487145557129947}
   - component: {fileID: 7209515883891871067}
   - component: {fileID: 1257309777785368689}
+  - component: {fileID: 4771746157380500228}
   m_Layer: 0
   m_Name: o_bush-big-dead
   m_TagString: Untagged
@@ -726,6 +825,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4771746157380500228
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5255068853144944712}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5100273, y: 0.5277382, z: 0.33807012}
+  m_Center: {x: 0.0033768117, y: -0.002852813, z: 0.16802348}
 --- !u!1 &5302866839266221573
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,6 +911,7 @@ GameObject:
   - component: {fileID: 2629587483923320859}
   - component: {fileID: 7755096885545265760}
   - component: {fileID: 7289300516121766448}
+  - component: {fileID: 2203975218121146307}
   m_Layer: 0
   m_Name: o_rocks4
   m_TagString: Untagged
@@ -871,6 +984,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2203975218121146307
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6295712322642423524}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0727168, y: 1.0269461, z: 0.5556226}
+  m_Center: {x: 0.019489825, y: -0.04223713, z: 0.050987337}
 --- !u!1 &6828401700329024064
 GameObject:
   m_ObjectHideFlags: 0
@@ -882,6 +1008,7 @@ GameObject:
   - component: {fileID: 6828401700329024067}
   - component: {fileID: 6828401700329024066}
   - component: {fileID: 6828401700329024065}
+  - component: {fileID: 7071892056176305543}
   m_Layer: 0
   m_Name: o_rocks1 (1)
   m_TagString: Untagged
@@ -954,6 +1081,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7071892056176305543
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6828401700329024064}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5688891, y: 2.6134448, z: 0.9305598}
+  m_Center: {x: 0.012623277, y: 0.3770152, z: 0.31624445}
 --- !u!1 &6828401702104502604
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,10 +1144,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02a5b3ab98eb4100ae830e946279a9e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Up: {fileID: 0}
-  Down: {fileID: 0}
-  Left: {fileID: 0}
-  Right: {fileID: 0}
 --- !u!1 &6828401702197072925
 GameObject:
   m_ObjectHideFlags: 0
@@ -1117,6 +1253,7 @@ GameObject:
   - component: {fileID: 1590888779136852665}
   - component: {fileID: 4187246993617547973}
   - component: {fileID: 1749880826853648595}
+  - component: {fileID: 1705543352286985668}
   m_Layer: 0
   m_Name: o_rocks2
   m_TagString: Untagged
@@ -1189,6 +1326,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1705543352286985668
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7888393910692323027}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1924554, y: 0.77916735, z: 1.1553626}
+  m_Center: {x: -0.09178597, y: 0.008627044, z: 0.35085732}
 --- !u!1 &8240722705577800781
 GameObject:
   m_ObjectHideFlags: 0
@@ -1245,6 +1395,7 @@ GameObject:
   - component: {fileID: 8604041655096625009}
   - component: {fileID: 1421908815186037198}
   - component: {fileID: 5118427656908358757}
+  - component: {fileID: 6981203383259719310}
   m_Layer: 0
   m_Name: o_medium-tower
   m_TagString: Untagged
@@ -1317,6 +1468,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6981203383259719310
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8303902855046193056}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7413529, y: 1.7368866, z: 5.1345606}
+  m_Center: {x: -0.042573437, y: -0.040299386, z: 2.541129}
 --- !u!1 &8998443820465267735
 GameObject:
   m_ObjectHideFlags: 0
@@ -1328,6 +1492,7 @@ GameObject:
   - component: {fileID: 8349334669636020117}
   - component: {fileID: 3435836743403945570}
   - component: {fileID: 7495926159216637568}
+  - component: {fileID: 5973466539532192919}
   m_Layer: 0
   m_Name: o_big-bush
   m_TagString: Untagged
@@ -1400,6 +1565,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5973466539532192919
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8998443820465267735}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6773186, y: 0.7257739, z: 0.38162288}
+  m_Center: {x: -0.009016678, y: -0.01135062, z: 0.19081147}
 --- !u!1 &9118073422292334563
 GameObject:
   m_ObjectHideFlags: 0
@@ -1411,6 +1589,7 @@ GameObject:
   - component: {fileID: 2876286260802822529}
   - component: {fileID: 5560777615402163412}
   - component: {fileID: 3233356105724725982}
+  - component: {fileID: 4696643678804746224}
   m_Layer: 0
   m_Name: o_rocks5
   m_TagString: Untagged
@@ -1483,3 +1662,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4696643678804746224
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9118073422292334563}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8244511, y: 0.61046207, z: 0.31776252}
+  m_Center: {x: 0.11409314, y: 0.12863322, z: 0.041033052}

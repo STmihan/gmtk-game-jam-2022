@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 1515609131317367017}
   - component: {fileID: 8202346562762399318}
   - component: {fileID: 2695258008199271421}
-  m_Layer: 0
+  - component: {fileID: -4731299729259910105}
+  m_Layer: 9
   m_Name: o_medium-tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &-4731299729259910105
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248156338061641784}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7413528, y: 1.7368867, z: 5.134562}
+  m_Center: {x: -0.04257348, y: -0.040299248, z: 2.5411298}
