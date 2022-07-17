@@ -1,4 +1,6 @@
-﻿namespace Gameplay.Components.Player
+﻿using System;
+
+namespace Gameplay.Components.Player
 {
     public struct PlayerActiveWeaponComponent
     {

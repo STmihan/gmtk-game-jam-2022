@@ -46,6 +46,7 @@ namespace Gameplay
                          .Add(new PlayerAttackSystem())
                          .Add(new PlayerChangeActiveWeaponSystem())
                          .Add(new PlayerHpSystem())
+                         .Add(new PlayerAddDicesCountSystem())
                          .Add(new PlayerWhiteAttackSystem())
                          .Add(new PlayerBlueAttackSystem())
                          .Add(new PlayerBrownAttackSystem())
