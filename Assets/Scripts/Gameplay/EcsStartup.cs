@@ -1,8 +1,18 @@
 using Gameplay.Components;
+using Gameplay.Components.Enemy;
+using Gameplay.Components.Player;
+using Gameplay.Components.Share.Attack;
 using Gameplay.Configs;
+using Gameplay.Configs.Attacks;
 using Gameplay.Configs.Enemies;
 using Gameplay.Systems;
+using Gameplay.Systems.Camera;
 using Gameplay.Systems.Enemy;
+using Gameplay.Systems.Player;
+using Gameplay.Systems.Player.Attack;
+using Gameplay.Systems.Player.Input;
+using Gameplay.Systems.Player.Movement;
+using Gameplay.Systems.Player.Setup;
 using Gameplay.Systems.Share;
 using Leopotam.Ecs;
 using Sirenix.OdinInspector;
@@ -15,13 +25,13 @@ namespace Gameplay
     {
         [InlineEditor] [SerializeField] 
         private PlayerConfig _playerConfig;
-
         [InlineEditor] [SerializeField] 
         private EnemySpawnConfig _enemySpawnConfig;
-
         [InlineEditor] [ReadOnly] [SerializeField]
         private EnemyStatsConfig _enemyStatsConfig;
-
+        [InlineEditor] [ReadOnly] [SerializeField]
+        private AttackConfig _attackConfig;
+        
         private EcsWorld _world;
         private EcsSystems _systems;
         private Camera _camera;
@@ -39,25 +49,22 @@ namespace Gameplay
             _systems
                 .ConvertScene()
                 .OneFrame<PlayerInputAttackEvent>()
+                .OneFrame<PlayerInputChangeWeaponEvent>()
+                .OneFrame<PlayerInputSecondaryAttackEvent>()
                 .Add(new TimeSystem())
-                .Add(new PlayerViewSetupSystem())
-                .Add(new PlayerMovementSetupSystem())
-                .Add(new PlayerRotationSetupSystem())
+                .Add(new IsAttackingTimerSystem())
+                .Add(new ReloadAttackTimerSystem())
+                .AddPlayerSystems()
+                .AddEnemySystems()
                 .Add(new CameraSetupSystem())
-                .Add(new PlayerInputSystem())
-                .Add(new SetPlayerMoveDirectionSystem())
-                .Add(new SetPlayerRotationDirectionSystem())
-                .Add(new PlayerMovementSystem())
-                .Add(new PlayerRotationSystem())
-                .Add(new EnemyManagerSystem())
-                .Add(new EnemyGenerateSpawnPositionSystem())
-                .Add(new EnemySpawnSystem())
-                .Add(new EnemySetupSystem())
-                .Add(new EnemyMovementSystem())
+                .OneFrame<HitEvent>()
+                .OneFrame<AttackEvent>()
+                .OneFrame<OnEnemyDieEvent>()
                 .Inject(_playerConfig)
                 .Inject(_enemySpawnConfig)
                 .Inject(_enemyStatsConfig)
                 .Inject(_camera)
+                .Inject(_attackConfig)
                 .Init();
 
         }

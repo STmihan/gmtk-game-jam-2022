@@ -1,9 +1,17 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<<< HEAD:Assets/Sprites/Ui/volumeOff.png.meta
+<<<<<<< HEAD
 guid: d5a8037172faad6468077540771dec1f
 =======
 guid: c1a91949cf1383241ba7a422f334ea97
 >>>>>>> b48fde2 (Adding gameplay ui and pause ui)
+========
+guid: d5a8037172faad6468077540771dec1f
+>>>>>>>> developer:Assets/Sprites/volumeOff.png.meta
+=======
+guid: c1a91949cf1383241ba7a422f334ea97
+>>>>>>> developer
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

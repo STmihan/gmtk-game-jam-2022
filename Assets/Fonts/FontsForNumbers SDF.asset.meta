@@ -1,5 +1,6 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<<< HEAD:Assets/Fonts/FontsForNumbers SDF.asset.meta
 guid: 214263578a756ac48ae4ea56da33a07a
 ========
@@ -8,6 +9,9 @@ guid: 8d7d96f0db137c145b206bc9b2a77438
 =======
 guid: 214263578a756ac48ae4ea56da33a07a
 >>>>>>> b48fde2 (Adding gameplay ui and pause ui)
+=======
+guid: 214263578a756ac48ae4ea56da33a07a
+>>>>>>> developer
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 11400000

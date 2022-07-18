@@ -1,6 +1,10 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Models/FBX.meta
 guid: 58dd8246d486e6d43a0513619a656762
 folderAsset: yes
+=======
+guid: d987090cb109ecc44934d28545766172
+>>>>>>> developer:Assets/Scenes/StartScene.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

@@ -1,4 +1,4 @@
-﻿namespace Gameplay.Components
+﻿namespace Gameplay.Components.Share
 {
     public struct TimeComponent
     {

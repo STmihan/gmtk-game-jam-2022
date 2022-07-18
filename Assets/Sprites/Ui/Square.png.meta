@@ -1,9 +1,13 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 guid: 050e1ea1879c8204ab9c18e9824051ea
 =======
 guid: c4b7b10216b01c54c8fa10430fc695d3
 >>>>>>> b48fde2 (Adding gameplay ui and pause ui)
+=======
+guid: c4b7b10216b01c54c8fa10430fc695d3
+>>>>>>> developer
 TextureImporter:
   internalIDToNameTable:
   - first:

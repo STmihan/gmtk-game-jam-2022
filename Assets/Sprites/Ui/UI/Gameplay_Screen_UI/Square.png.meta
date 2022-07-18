@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Sprites/Ui/UI/Gameplay_Screen_UI/Square.png.meta
 guid: 532d02e93298f674c811efd1921e328b
+========
+guid: 050e1ea1879c8204ab9c18e9824051ea
+>>>>>>>> developer:Assets/Sprites/Square.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Gameplay.Configs.Enemies
+namespace Gameplay.Configs.Enemies.Stats
 {
     [Serializable]
     public class SuicideMeleeEnemy : Enemy

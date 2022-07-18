@@ -1,9 +1,13 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 guid: d987090cb109ecc44934d28545766172
 =======
 guid: 0919cbd52dd6e974696690f2ad874aaa
 >>>>>>> b48fde2 (Adding gameplay ui and pause ui)
+=======
+guid: 0919cbd52dd6e974696690f2ad874aaa
+>>>>>>> developer
 DefaultImporter:
   externalObjects: {}
   userData: 

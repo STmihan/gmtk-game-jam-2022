@@ -1,9 +1,17 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<<< HEAD:Assets/Sprites/Ui/niceLine.png.meta
+<<<<<<< HEAD
 guid: 4b6a693651cd3ec4e99e4d231b010418
 =======
 guid: dd78ce38a7b2ce94eb4f77f7c7b2edf2
 >>>>>>> b48fde2 (Adding gameplay ui and pause ui)
+========
+guid: 4b6a693651cd3ec4e99e4d231b010418
+>>>>>>>> developer:Assets/Sprites/niceLine.png.meta
+=======
+guid: dd78ce38a7b2ce94eb4f77f7c7b2edf2
+>>>>>>> developer
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

@@ -23,17 +23,17 @@ MonoBehaviour:
     SerializationNodes:
     - Name: EnemySpawnStats
       Entry: 7
-      Data: 0|System.Collections.Generic.List`1[[Gameplay.Configs.Enemies.EnemySpawnStat,
+      Data: 0|System.Collections.Generic.List`1[[Gameplay.Configs.Enemies.Spawn.EnemySpawnStat,
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
       Data: 5
     - Name: 
       Entry: 7
-      Data: Gameplay.Configs.Enemies.EnemySpawnStat, Assembly-CSharp
+      Data: Gameplay.Configs.Enemies.Spawn.EnemySpawnStat, Assembly-CSharp
     - Name: EnemyType
       Entry: 7
-      Data: 1|Gameplay.Configs.Enemies.BigMeleeEnemy, Assembly-CSharp
+      Data: 1|Gameplay.Configs.Enemies.Stats.BigMeleeEnemy, Assembly-CSharp
     - Name: Prefab
       Entry: 6
       Data: 
@@ -159,10 +159,10 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: Gameplay.Configs.Enemies.EnemySpawnStat, Assembly-CSharp
+      Data: Gameplay.Configs.Enemies.Spawn.EnemySpawnStat, Assembly-CSharp
     - Name: EnemyType
       Entry: 7
-      Data: 4|Gameplay.Configs.Enemies.MeleeEnemy, Assembly-CSharp
+      Data: 4|Gameplay.Configs.Enemies.Stats.MeleeEnemy, Assembly-CSharp
     - Name: Prefab
       Entry: 6
       Data: 
@@ -216,13 +216,13 @@ MonoBehaviour:
       Data: 0
     - Name: m_Value
       Entry: 4
-      Data: 0.4
+      Data: 0.3
     - Name: m_InTangent
       Entry: 4
-      Data: -0.2
+      Data: -0.100000009
     - Name: m_OutTangent
       Entry: 4
-      Data: -0.2
+      Data: -0.100000009
     - Name: m_TangentMode
       Entry: 3
       Data: 34
@@ -252,10 +252,10 @@ MonoBehaviour:
       Data: 0.2
     - Name: m_InTangent
       Entry: 4
-      Data: -0.2
+      Data: -0.100000009
     - Name: m_OutTangent
       Entry: 4
-      Data: -0.2
+      Data: -0.100000009
     - Name: m_TangentMode
       Entry: 3
       Data: 34
@@ -291,10 +291,10 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: Gameplay.Configs.Enemies.EnemySpawnStat, Assembly-CSharp
+      Data: Gameplay.Configs.Enemies.Spawn.EnemySpawnStat, Assembly-CSharp
     - Name: EnemyType
       Entry: 7
-      Data: 7|Gameplay.Configs.Enemies.RangedAoeEnemy, Assembly-CSharp
+      Data: 7|Gameplay.Configs.Enemies.Stats.RangedAoeEnemy, Assembly-CSharp
     - Name: Prefab
       Entry: 6
       Data: 
@@ -420,10 +420,10 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: Gameplay.Configs.Enemies.EnemySpawnStat, Assembly-CSharp
+      Data: Gameplay.Configs.Enemies.Spawn.EnemySpawnStat, Assembly-CSharp
     - Name: EnemyType
       Entry: 7
-      Data: 10|Gameplay.Configs.Enemies.RangedProjectileEnemy, Assembly-CSharp
+      Data: 10|Gameplay.Configs.Enemies.Stats.RangedProjectileEnemy, Assembly-CSharp
     - Name: Prefab
       Entry: 6
       Data: 
@@ -474,10 +474,10 @@ MonoBehaviour:
       Data: 0.2
     - Name: m_InTangent
       Entry: 4
-      Data: 0
+      Data: 0.100000009
     - Name: m_OutTangent
       Entry: 4
-      Data: 0
+      Data: 0.100000009
     - Name: m_TangentMode
       Entry: 3
       Data: 34
@@ -504,13 +504,13 @@ MonoBehaviour:
       Data: 1
     - Name: m_Value
       Entry: 4
-      Data: 0.2
+      Data: 0.3
     - Name: m_InTangent
       Entry: 4
-      Data: 0
+      Data: 0.100000009
     - Name: m_OutTangent
       Entry: 4
-      Data: 0
+      Data: 0.100000009
     - Name: m_TangentMode
       Entry: 3
       Data: 34
@@ -546,10 +546,10 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: Gameplay.Configs.Enemies.EnemySpawnStat, Assembly-CSharp
+      Data: Gameplay.Configs.Enemies.Spawn.EnemySpawnStat, Assembly-CSharp
     - Name: EnemyType
       Entry: 7
-      Data: 13|Gameplay.Configs.Enemies.SuicideMeleeEnemy, Assembly-CSharp
+      Data: 13|Gameplay.Configs.Enemies.Stats.SuicideMeleeEnemy, Assembly-CSharp
     - Name: Prefab
       Entry: 6
       Data: 
@@ -597,13 +597,13 @@ MonoBehaviour:
       Data: 0
     - Name: m_Value
       Entry: 4
-      Data: 0.2
+      Data: 0.3
     - Name: m_InTangent
       Entry: 4
-      Data: 0
+      Data: -0.200000018
     - Name: m_OutTangent
       Entry: 4
-      Data: 0
+      Data: -0.200000018
     - Name: m_TangentMode
       Entry: 3
       Data: 34
@@ -630,13 +630,13 @@ MonoBehaviour:
       Data: 1
     - Name: m_Value
       Entry: 4
-      Data: 0.2
+      Data: 0.1
     - Name: m_InTangent
       Entry: 4
-      Data: 0
+      Data: -0.200000018
     - Name: m_OutTangent
       Entry: 4
-      Data: 0
+      Data: -0.200000018
     - Name: m_TangentMode
       Entry: 3
       Data: 34
@@ -685,17 +685,17 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 20
-      inSlope: 80
-      outSlope: 80
+      inSlope: 25
+      outSlope: 25
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
-      value: 100
-      inSlope: 80
-      outSlope: 80
+      value: 45
+      inSlope: 25
+      outSlope: 25
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
@@ -703,4 +703,4 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  TimeBetweenWave: 30
+  TimeBetweenWave: 15

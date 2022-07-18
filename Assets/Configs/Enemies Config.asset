@@ -16,11 +16,11 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 181789998540761054, guid: 37a79d91a94351342a481bdd0e9a6320, type: 3}
-    - {fileID: 8528729104509069085, guid: 735c4951269168b4bb0ac1a183943e00, type: 3}
-    - {fileID: 7626620387842412271, guid: 8bc08eeca277b2343b1b870cb1e555e8, type: 3}
-    - {fileID: 1751832830245181440, guid: 30c913b6d5a298d49a1d6844b3e4b209, type: 3}
-    - {fileID: 8218548098312126694, guid: ec03943d8989cad42a8dff84a8fc8a13, type: 3}
+    - {fileID: 8797160422912487170, guid: 735c4951269168b4bb0ac1a183943e00, type: 3}
+    - {fileID: -7423056900297072967, guid: 37a79d91a94351342a481bdd0e9a6320, type: 3}
+    - {fileID: 6431194361956885883, guid: ec03943d8989cad42a8dff84a8fc8a13, type: 3}
+    - {fileID: 6839974366711606147, guid: 8bc08eeca277b2343b1b870cb1e555e8, type: 3}
+    - {fileID: 3731996026207890278, guid: 30c913b6d5a298d49a1d6844b3e4b209, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -28,17 +28,50 @@ MonoBehaviour:
     SerializationNodes:
     - Name: Enemies
       Entry: 7
-      Data: 0|System.Collections.Generic.List`1[[Gameplay.Configs.Enemies.Enemy,
+      Data: 0|System.Collections.Generic.List`1[[Gameplay.Configs.Enemies.Stats.Enemy,
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
       Data: 5
     - Name: 
       Entry: 7
-      Data: 1|Gameplay.Configs.Enemies.BigMeleeEnemy, Assembly-CSharp
+      Data: 1|Gameplay.Configs.Enemies.Stats.MeleeEnemy, Assembly-CSharp
     - Name: Prefab
       Entry: 10
       Data: 0
+    - Name: MaxHp
+      Entry: 3
+      Data: 10
+    - Name: MoveSpeed
+      Entry: 4
+      Data: 8
+    - Name: RotationDuration
+      Entry: 4
+      Data: 0.2
+    - Name: DelayBetweenHits
+      Entry: 4
+      Data: 1
+    - Name: Range
+      Entry: 4
+      Data: 5
+    - Name: ChargeDistance
+      Entry: 4
+      Data: 10
+    - Name: Damage
+      Entry: 3
+      Data: 4
+    - Name: DelayBeforeCharge
+      Entry: 4
+      Data: 0.75
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 2|Gameplay.Configs.Enemies.Stats.BigMeleeEnemy, Assembly-CSharp
+    - Name: Prefab
+      Entry: 10
+      Data: 1
     - Name: MaxHp
       Entry: 3
       Data: 20
@@ -53,13 +86,16 @@ MonoBehaviour:
       Data: 4
     - Name: Range
       Entry: 4
-      Data: 1
+      Data: 3
     - Name: DelayBeforeHit
+      Entry: 4
+      Data: 0.5
+    - Name: DelayBeforeExplosion
       Entry: 4
       Data: 1
     - Name: Damage
       Entry: 3
-      Data: 10
+      Data: 8
     - Name: AoeRadius
       Entry: 4
       Data: 2
@@ -68,76 +104,37 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 2|Gameplay.Configs.Enemies.MeleeEnemy, Assembly-CSharp
+      Data: 3|Gameplay.Configs.Enemies.Stats.SuicideMeleeEnemy, Assembly-CSharp
     - Name: Prefab
       Entry: 10
+      Data: 2
+    - Name: MaxHp
+      Entry: 3
+      Data: 4
+    - Name: MoveSpeed
+      Entry: 4
+      Data: 8
+    - Name: RotationDuration
+      Entry: 4
+      Data: 0.2
+    - Name: DelayBetweenHits
+      Entry: 4
       Data: 1
-    - Name: MaxHp
-      Entry: 3
-      Data: 10
-    - Name: MoveSpeed
-      Entry: 4
-      Data: 8
-    - Name: RotationDuration
-      Entry: 4
-      Data: 0.2
-    - Name: DelayBetweenHits
-      Entry: 4
-      Data: 2
     - Name: Range
       Entry: 4
-      Data: 2
-    - Name: ChargeDistance
-      Entry: 4
-      Data: 4
-    - Name: Damage
-      Entry: 3
-      Data: 10
-    - Name: DotDamage
-      Entry: 3
-      Data: 2
-    - Name: DotDuration
-      Entry: 4
-      Data: 4
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 3|Gameplay.Configs.Enemies.RangedAoeEnemy, Assembly-CSharp
-    - Name: Prefab
-      Entry: 10
-      Data: 2
-    - Name: MaxHp
-      Entry: 3
-      Data: 10
-    - Name: MoveSpeed
-      Entry: 4
-      Data: 8
-    - Name: RotationDuration
-      Entry: 4
-      Data: 0.2
-    - Name: DelayBetweenHits
-      Entry: 4
-      Data: 4
-    - Name: Range
-      Entry: 4
-      Data: 5
+      Data: 2.5
     - Name: Damage
       Entry: 3
       Data: 4
     - Name: AoeRadius
       Entry: 4
-      Data: 4
-    - Name: DelayBeforeHit
-      Entry: 4
       Data: 2
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 7
-      Data: 4|Gameplay.Configs.Enemies.RangedProjectileEnemy, Assembly-CSharp
+      Data: 4|Gameplay.Configs.Enemies.Stats.RangedAoeEnemy, Assembly-CSharp
     - Name: Prefab
       Entry: 10
       Data: 3
@@ -146,52 +143,55 @@ MonoBehaviour:
       Data: 10
     - Name: MoveSpeed
       Entry: 4
-      Data: 8
+      Data: 4
     - Name: RotationDuration
       Entry: 4
       Data: 0.2
     - Name: DelayBetweenHits
       Entry: 4
-      Data: 2
+      Data: 4
     - Name: Range
       Entry: 4
-      Data: 4
-    - Name: ProjectileSpeed
-      Entry: 4
-      Data: 10
+      Data: 15
     - Name: Damage
       Entry: 3
-      Data: 4
+      Data: 6
+    - Name: AoeRadius
+      Entry: 4
+      Data: 2
+    - Name: DelayBeforeHit
+      Entry: 4
+      Data: 1
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 7
-      Data: 5|Gameplay.Configs.Enemies.SuicideMeleeEnemy, Assembly-CSharp
+      Data: 5|Gameplay.Configs.Enemies.Stats.RangedProjectileEnemy, Assembly-CSharp
     - Name: Prefab
       Entry: 10
       Data: 4
     - Name: MaxHp
       Entry: 3
-      Data: 4
+      Data: 10
     - Name: MoveSpeed
       Entry: 4
-      Data: 10
+      Data: 6
     - Name: RotationDuration
       Entry: 4
       Data: 0.2
     - Name: DelayBetweenHits
       Entry: 4
-      Data: 1
+      Data: 2
     - Name: Range
       Entry: 4
-      Data: 1
+      Data: 13
+    - Name: ProjectileSpeed
+      Entry: 4
+      Data: 200
     - Name: Damage
       Entry: 3
-      Data: 10
-    - Name: AoeRadius
-      Entry: 4
-      Data: 2
+      Data: 4
     - Name: 
       Entry: 8
       Data: 

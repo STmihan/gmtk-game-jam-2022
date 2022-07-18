@@ -1,5 +1,6 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<<< HEAD:Assets/Sprites/Ui.meta
 guid: 8d81389dcf43f8c4897c021262820a8f
 folderAsset: yes
@@ -13,6 +14,11 @@ guid: 8d81389dcf43f8c4897c021262820a8f
 folderAsset: yes
 DefaultImporter:
 >>>>>>> b48fde2 (Adding gameplay ui and pause ui)
+=======
+guid: 8d81389dcf43f8c4897c021262820a8f
+folderAsset: yes
+DefaultImporter:
+>>>>>>> developer
   externalObjects: {}
   userData: 
   assetBundleName: 

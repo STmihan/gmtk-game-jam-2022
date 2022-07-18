@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Gameplay.Components
+namespace Gameplay.Components.Player
 {
     public struct PlayerInputComponent
     {
