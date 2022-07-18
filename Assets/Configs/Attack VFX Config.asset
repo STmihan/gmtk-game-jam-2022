@@ -17,25 +17,39 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: -4048652416525185937, guid: 7f4707b8eb3f243458a2b9f206b6d0bd, type: 3}
+    - {fileID: 8300000, guid: 15158ccaf9275a347b2a56d5c4826d1f, type: 3}
+    - {fileID: 8300000, guid: eec080e690278564db12027b889cb465, type: 3}
     - {fileID: 5084353894263820763, guid: c09b9a9bc64e5b3458184ad9d944e684, type: 3}
     - {fileID: 4070849223248650287, guid: 13880c387e0ba8045964630d09e66bc6, type: 3}
     - {fileID: -524870652015700731, guid: 83271ee01a0f7784a886cce1b46f7add, type: 3}
+    - {fileID: 8300000, guid: f8abb6851831b2c4aa2abc8508ca3a2f, type: 3}
+    - {fileID: 8300000, guid: fdd0fcffc8e046b4397a3988e02c9b93, type: 3}
     - {fileID: 5797350662664681374, guid: 290f1d640cecb97489f6009be540e723, type: 3}
     - {fileID: 1598510078412016403, guid: 9169d5bbb6196cd45a4fb5b252c4ea97, type: 3}
     - {fileID: 5269856507281119683, guid: a5f8e460abefae04091c7175b67f01f2, type: 3}
+    - {fileID: 8300000, guid: 2f54c51a90e57e145a94dd3558d1fecd, type: 3}
+    - {fileID: 8300000, guid: 046ac8ffbeabd384384d5629948ee278, type: 3}
     - {fileID: 4070849223248650287, guid: 328c7d7585cf4544e95edb16fd4fd69c, type: 3}
     - {fileID: -7856862592207580896, guid: f2fe08f4811e5bd419616f482c716a38, type: 3}
     - {fileID: -8056331375218627505, guid: f5547c89a031c2948a83b27ee0ae9ff3, type: 3}
+    - {fileID: 8300000, guid: 7486940701f0dd9438c00579e502a34b, type: 3}
+    - {fileID: 8300000, guid: 457f598e4c2bc7f4e85acc89a37bdbfe, type: 3}
     - {fileID: 3593515385178816457, guid: 7cb56b1e84bf342429247739f2973b5e, type: 3}
     - {fileID: -4887663525309678185, guid: c11bd6760b2c54240916081c4f2b9264, type: 3}
     - {fileID: -4493841171148374118, guid: a7bbe8011228b0944a791f42c36bb084, type: 3}
+    - {fileID: 8300000, guid: 9fb94cdd44f92ea449b10f60126d352d, type: 3}
     - {fileID: 4070849223248650287, guid: 8de90bf0fc1ea5a428d68d55a2f36642, type: 3}
     - {fileID: -524870652015700731, guid: 0f394d58196d4874cad3b9ec4485e811, type: 3}
+    - {fileID: 8300000, guid: 5c778714a2d950e4ab38f5a82dee2e0d, type: 3}
     - {fileID: 1598510078412016403, guid: 48f1991287594f749a362afd4ef6b91c, type: 3}
+    - {fileID: 8300000, guid: ff218f2e84058b848bcd5430b53c83a9, type: 3}
+    - {fileID: 8300000, guid: edad618656454a44bbbf2ceb74e55439, type: 3}
     - {fileID: 4070849223248650287, guid: 361572984275caf4aa12cd0bf1bf37b3, type: 3}
     - {fileID: 1598510078412016403, guid: 0ecb05779afe9b242b2fbd45ba286f89, type: 3}
+    - {fileID: 8300000, guid: 838a087e01a8384498f245830250f841, type: 3}
     - {fileID: 5084353894263820763, guid: 0b47fd0877a7eb24b9db4315ba95f451, type: 3}
     - {fileID: 4070849223248650287, guid: e43cc30e6c08e574097c4c593475ddf5, type: 3}
+    - {fileID: 8300000, guid: 167083c0efaa9154fb680866f7367fd0, type: 3}
     - {fileID: 7752028222907906798, guid: cc2e66aa282937b4381acd7b9298932e, type: 3}
     - {fileID: -7294285029619834316, guid: 7dc994e885826b6429e582df7bc0d4cf, type: 3}
     - {fileID: -4887663525309678185, guid: 4723a48f1c9ee154083acb61d957980d, type: 3}
@@ -59,12 +73,18 @@ MonoBehaviour:
     - Name: ProjectilePrefab
       Entry: 10
       Data: 0
-    - Name: ExplosionVFX
+    - Name: ThrowSound
       Entry: 10
       Data: 1
-    - Name: CircleVfx
+    - Name: HitSound
       Entry: 10
       Data: 2
+    - Name: ExplosionVFX
+      Entry: 10
+      Data: 3
+    - Name: CircleVfx
+      Entry: 10
+      Data: 4
     - Name: Damage
       Entry: 3
       Data: 7
@@ -79,13 +99,19 @@ MonoBehaviour:
       Data: 2|Gameplay.Configs.Attacks.PlayerBlueAttack, Assembly-CSharp
     - Name: ProjectilePrefab
       Entry: 10
-      Data: 3
+      Data: 5
+    - Name: ThrowSound
+      Entry: 10
+      Data: 6
+    - Name: HitSound
+      Entry: 10
+      Data: 7
     - Name: Trail
       Entry: 10
-      Data: 4
+      Data: 8
     - Name: Explosion
       Entry: 10
-      Data: 5
+      Data: 9
     - Name: ChainCount
       Entry: 3
       Data: 8
@@ -100,13 +126,19 @@ MonoBehaviour:
       Data: 3|Gameplay.Configs.Attacks.PlayerDarkAttack, Assembly-CSharp
     - Name: ProjectilePrefab
       Entry: 10
-      Data: 6
+      Data: 10
+    - Name: ThrowSound
+      Entry: 10
+      Data: 11
+    - Name: HitSound
+      Entry: 10
+      Data: 12
     - Name: ChargeVFX
       Entry: 10
-      Data: 7
+      Data: 13
     - Name: ExplosionVFX
       Entry: 10
-      Data: 8
+      Data: 14
     - Name: Radius
       Entry: 4
       Data: 15
@@ -124,13 +156,19 @@ MonoBehaviour:
       Data: 4|Gameplay.Configs.Attacks.PlayerBrownAttack, Assembly-CSharp
     - Name: ProjectilePrefab
       Entry: 10
-      Data: 9
+      Data: 15
+    - Name: ThrowSound
+      Entry: 10
+      Data: 16
+    - Name: HitSound
+      Entry: 10
+      Data: 17
     - Name: HitVFX
       Entry: 10
-      Data: 10
+      Data: 18
     - Name: TopVFX
       Entry: 10
-      Data: 11
+      Data: 19
     - Name: Damage
       Entry: 3
       Data: 12
@@ -148,10 +186,16 @@ MonoBehaviour:
       Data: 5|Gameplay.Configs.Attacks.PlayerWhiteAttack, Assembly-CSharp
     - Name: ProjectilePrefab
       Entry: 10
-      Data: 12
+      Data: 20
+    - Name: ThrowSound
+      Entry: 10
+      Data: 11
+    - Name: HitSound
+      Entry: 10
+      Data: 21
     - Name: HitVFX
       Entry: 10
-      Data: 13
+      Data: 22
     - Name: Damage
       Entry: 3
       Data: 5
@@ -163,10 +207,16 @@ MonoBehaviour:
       Data: 6|Gameplay.Configs.Attacks.EnemyBlueAttack, Assembly-CSharp
     - Name: ProjectilePrefab
       Entry: 10
-      Data: 14
+      Data: 23
+    - Name: ThrowSound
+      Entry: 10
+      Data: 6
+    - Name: HitSound
+      Entry: 10
+      Data: 24
     - Name: HitVFX
       Entry: 10
-      Data: 15
+      Data: 25
     - Name: 
       Entry: 8
       Data: 
@@ -176,12 +226,18 @@ MonoBehaviour:
     - Name: ProjectilePrefab
       Entry: 6
       Data: 
+    - Name: ThrowSound
+      Entry: 10
+      Data: 26
+    - Name: HitSound
+      Entry: 10
+      Data: 27
     - Name: ChargeVfx
       Entry: 10
-      Data: 16
+      Data: 28
     - Name: HitVFX
       Entry: 10
-      Data: 17
+      Data: 29
     - Name: 
       Entry: 8
       Data: 
@@ -191,12 +247,18 @@ MonoBehaviour:
     - Name: ProjectilePrefab
       Entry: 6
       Data: 
+    - Name: ThrowSound
+      Entry: 6
+      Data: 
+    - Name: HitSound
+      Entry: 10
+      Data: 30
     - Name: ExplosionVFX
       Entry: 10
-      Data: 18
+      Data: 31
     - Name: CircleVFX
       Entry: 10
-      Data: 19
+      Data: 32
     - Name: 
       Entry: 8
       Data: 
@@ -206,9 +268,15 @@ MonoBehaviour:
     - Name: ProjectilePrefab
       Entry: 6
       Data: 
+    - Name: ThrowSound
+      Entry: 6
+      Data: 
+    - Name: HitSound
+      Entry: 10
+      Data: 33
     - Name: TrailVFX
       Entry: 10
-      Data: 20
+      Data: 34
     - Name: 
       Entry: 8
       Data: 
@@ -218,18 +286,24 @@ MonoBehaviour:
     - Name: ProjectilePrefab
       Entry: 6
       Data: 
+    - Name: ThrowSound
+      Entry: 10
+      Data: 16
+    - Name: HitSound
+      Entry: 10
+      Data: 17
     - Name: BottomVfx
       Entry: 10
-      Data: 21
+      Data: 35
     - Name: TopVFX
       Entry: 10
-      Data: 22
+      Data: 36
     - Name: HitVFX
       Entry: 10
-      Data: 23
+      Data: 37
     - Name: ShootVFX
       Entry: 10
-      Data: 24
+      Data: 38
     - Name: 
       Entry: 8
       Data: 

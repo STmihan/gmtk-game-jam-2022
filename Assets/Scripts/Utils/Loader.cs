@@ -1,4 +1,5 @@
 ﻿using System;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,6 +11,5 @@ namespace Utils
         {
             SceneManager.LoadScene(1);
         }
-
     }
 }

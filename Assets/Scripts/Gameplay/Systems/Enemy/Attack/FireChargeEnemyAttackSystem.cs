@@ -10,6 +10,7 @@ using Gameplay.Configs.Enemies;
 using Gameplay.Configs.Enemies.Stats;
 using Gameplay.UnityComponents;
 using Leopotam.Ecs;
+using Music;
 using UnityEngine;
 
 namespace Gameplay.Systems.Enemy.Attack
@@ -53,6 +54,7 @@ namespace Gameplay.Systems.Enemy.Attack
                     .Append(view.transform.DOMove(endPoint, 0.2f))
                     .OnComplete(() =>
                     {
+                        SoundController.Play(config.HitSound);
                         endPoint.y = 1;
                         startPos.y = 1;
                         var ray = new Ray(startPos,

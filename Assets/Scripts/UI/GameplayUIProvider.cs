@@ -27,6 +27,7 @@ namespace UI
         [SerializeField] private Sprite _darkDiceImage;
         [SerializeField] private Sprite _earthDiceImage;
         [Space] public CanvasGroup DeadScreen;
+        [Space] public TMP_Text Timer;
         
 
         private void Update()
@@ -59,6 +60,8 @@ namespace UI
                     _currentDice.sprite = _currentDice.sprite;
                     break;
             }
+
+            Timer.text = Mathf.RoundToInt(Time.timeSinceLevelLoad).ToString();
         }
     }
 }

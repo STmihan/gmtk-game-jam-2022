@@ -11,6 +11,7 @@ using Gameplay.Configs.Enemies;
 using Gameplay.Configs.Enemies.Stats;
 using Gameplay.UnityComponents;
 using Leopotam.Ecs;
+using Music;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
@@ -45,6 +46,7 @@ namespace Gameplay.Systems.Enemy.Attack
                 sequence.AppendInterval(statsConfig.DelayBeforeHit);
                 sequence.OnComplete(() =>
                 {
+                    SoundController.Play(config.ThrowSound);
                     var hitVFX = Object.Instantiate(config.HitVFX, hitPoint, Quaternion.identity);
                     Object.Destroy(hitVFX.gameObject, 1);
                     Collider[] result = new Collider[2];
@@ -88,6 +90,7 @@ namespace Gameplay.Systems.Enemy.Attack
                                 _world.NewEntity().Get<CameraShakeComponent>();
                             }
                         }
+                        SoundController.Play(config.HitSound);
                     });
                 });
 

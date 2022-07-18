@@ -7,6 +7,7 @@ using Gameplay.Configs.Attacks;
 using Gameplay.Configs.Enemies;
 using Gameplay.Configs.Enemies.Stats;
 using Leopotam.Ecs;
+using Music;
 using UnityEngine;
 
 namespace Gameplay.Systems.Enemy.Attack
@@ -40,6 +41,7 @@ namespace Gameplay.Systems.Enemy.Attack
                 });
                 sequence.AppendInterval(0.4f).OnComplete(() =>
                 {
+                    SoundController.Play(config.ThrowSound);
                     var projectileView = Object.Instantiate(config!.ProjectilePrefab, view.FirePoint.position,
                         Quaternion.identity);
                     projectileView.Type = config.Type;

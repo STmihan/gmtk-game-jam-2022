@@ -2,6 +2,7 @@
 using Gameplay.UnityComponents;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using UnityEngine;
 
 namespace Gameplay.Configs.Attacks
 {
@@ -10,6 +11,8 @@ namespace Gameplay.Configs.Attacks
     {
         [PreviewField]
         public ProjectileView ProjectilePrefab;
+        public AudioClip ThrowSound;
+        public AudioClip HitSound;
         [OdinSerialize] public Type Type => GetType();
     }
 }

@@ -8,6 +8,7 @@ using Gameplay.Components.Share.Attack;
 using Gameplay.Configs.Attacks;
 using Gameplay.UnityComponents;
 using Leopotam.Ecs;
+using Music;
 using UnityEngine;
 
 namespace Gameplay.Systems.Player.Attack.Types
@@ -51,6 +52,7 @@ namespace Gameplay.Systems.Player.Attack.Types
                         {
                             _world.NewEntity().Get<CameraShakeComponent>();
                         }
+                        SoundController.Play(config.HitSound);
                         Object.Instantiate(config.ExplosionVFX, view.transform.position, Quaternion.identity);
                     }
                 }
